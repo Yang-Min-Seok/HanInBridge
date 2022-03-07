@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HanInBridge</title>
+    
+    <!-- adopt font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    </style>
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- adopt jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+    <style>
+        *{
+            margin:0px; /* outside */
+            padding:0px; /* inside */
+        }
+        ul, li{
+            list-style:none;
+        }
+        a{
+            text-decoration:none;
+            color:#333333;
+        }
+        body{
+            font-family: 'Nanum Gothic', sans-serif;
+            font-size:35px;
+            color: #333;
+            margin:0px;
+            padding:0px;
+        }
+        header{
+            width:100%;
+            border-top:3px solid #FF4646;
+        }
+        #header_top, #header_bottom{
+            width:1600px;
+            margin:15px 0px; /* top,bottom // right,left*/
+        }
+        
+        #header_top > h1{
+            /* padding:0px 0px; */
+            text-align:center;
+        }
+        #header_bottom{
+            width:100%;
+            height:42px;
+            border-top:1px solid #FF4646;
+            border-bottom:1px solid #FF4646;
+            position:absolute;
+            z-index:1;
+        }
+        #header_bottom > nav > ul{
+            width:900px; /* This can control the space between contents of nav  */ 
+            margin:0px auto;
+            display:flex;
+            justify-content : space-between; /* align same space between contents */  
+        }
+        #header_bottom::after{
+            display:block;
+            content:"";
+            width:100%;
+            height:1px;
+            background-color: #333;
+            position:absolute;
+            top:46px;
+            transition:0.5s;
+            opacity:0;
+        }
+        #header_bottom:hover::after{
+            opacity:1;
+        }
+        
+        /* main slide */
+        section{
+            padding-bottom:110px;
+        }
+        main{
+            padding-top:60px;
+            padding-bottom:110px;
+        }
+        #visual{
+            width:1600px;
+            margin:0px auto;
+            position:relative;
+        }
+        .slide{
+            width:6400px;
+            display:flex;
+        }
+        .slide > li{
+            width:1600px;
+        }
+        i.fas{
+            position:absolute;
+            top:43%;
+            font-size:50px;
+            padding:20px;
+            background-color: rgba(0,0,0,.7);
+            cursor:pointer;
+            color:#fff;
+        }
+        .fa-angle-left{
+            left:0px;
+        }
+        .fa-angle-right{
+            right:0px;
+        }
+
+        /* footer -> reacting*/ 
+        #wrapper{
+        height: auto;
+        min-height: 100%;
+        padding-bottom: 100px;
+        }
+        footer{
+        height: 100px;
+        position : relative;
+        transform : translateY(-100%);
+        border-top: 1px solid #c4c4c4;
+        color: #808080;
+        font-size:14px;
+        }
+        footer p span{
+            display: inline-block;
+            margin-left:20px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            
+            // 1. take last slide to first
+           $('.slide > li:last-child').insertBefore('.slide > li:first-child')
+
+           // 2. move -1600px to show 1st slide in the middle
+           $('.slide').css('margin-left','-1600px');
+
+           // 3. make move_left()
+           function move_left(){
+               $('.slide').animate({'margin-left':'-3200px'},500,function(){ //  * move -3200px to make it move !
+                   $('.slide > li:first-child').insertAfter('.slide li:last-child'); // take first-child to last
+                   $('.slide').css('margin-left','-1600px'); // 
+               });
+           }
+           // 4. make move_right()
+           function move_right(){
+               $('.slide').animate({'margin-left':'0px'},500,function(){
+                    $('.slide > li:last-child').insertBefore('.slide > li:first-child');
+                    $('.slide').css('margin-left','-1600px')
+               });
+           }
+
+           // 5. call move_left every 4 sec
+           let Timer = setInterval(move_left,4000);
+
+           // 6. implement left, right button
+           const l_btn = $('i.fa-angle-left'), r_btn = $('i.fa-angle-right');
+           l_btn.click(function(){
+               move_left();
+           })
+           r_btn.click(function(){
+               move_right();
+           })
+
+           // 7. clear Timer when mouse gets over the left, right button
+           $('i.fas').hover(function(){
+               clearInterval(Timer);
+           },function(){ // when mouse gets out of the button, set Timer again
+               Timer=setInterval(move_left,4000);
+           });
+        });
+    </script>
+</head>
+<body>
+    <div id='wrapper'>
+        <header>
+            <!-- logo -->
+            <div id="header_top">
+                <h1>
+                    <a href="index.thml" title="to main page">
+                        <img src="./asset/img/logo.png" alt="">
+                    </a>
+                </h1>
+            </div>
+
+            <!-- nav -->
+            <div id="header_bottom">
+            <nav>
+                <ul>
+                    <li><a href="#" title="about us">About Us</a> </li>
+                    <li><a href="#" title="recruit">Recruit</a> </li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+
+        <!-- moving banner -->
+        <main>
+            <section id="visual">
+                <ul class="slide">
+                    <li><a href="#" title="페이지이동"><img src="./asset/img/testImg01.jpg" alt="배너"></a></li>
+                    <li><a href="#" title="페이지이동"><img src="./asset/img/testImg02.jpg" alt="배너"></a></li>
+                    <li><a href="#" title="페이지이동"><img src="./asset/img/testImg03.jpg" alt="배너"></a></li>
+                    <li><a href="#" title="페이지이동"><img src="./asset/img/testImg04.jpg" alt="배너"></a></li>
+                </ul>
+                <i class="fas fa-angle-left"></i>
+                <i class="fas fa-angle-right"></i>
+            </section>
+        </main>
+    </div>
+    
+    <!-- footer -->
+    <footer>
+        <p>
+            <span>CEO : Jin Woo Park</span><br>
+            <span>E-mail : ###@###.com</span><br>
+            <span>Tel : 010 - #### - ####</span><br>
+            <span>copyrightⓒ 2008 All rights reserved by kurooru98</span>
+        </p>
+    </footer>
+</body>
+
+
+
+</html>
