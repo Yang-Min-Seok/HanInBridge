@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HanInBridge</title>
+    <style>
+        *{
+            margin:0 auto;
+            padding:0;
+        }
+        /* header style */
+        ul, li{
+            list-style:none;
+        }
+        html, body{
+            width:1600px;
+        }
+        header{
+            border-top: 3px solid #ff4646;
+            text-align:center;
+            margin-bottom:50px;
+        }
+        header > h1{
+            border-bottom: 3px solid #ff4646;
+        }
+        header > nav{
+            border-bottom: 3px solid #ff4646;
+        }
+        .navi > ul{
+            display:flex;
+            justify-content: space-around;
+        }
+        .navi > ul > li > a{
+            text-decoration:none;
+            font-size: 35px;
+            color:#000;
+        }
+        .navi > ul > li:hover{
+            opacity:0.5;
+        }
+
+        /* main slide */
+        #visual{
+            width:1600px;
+            height:1000px;
+            margin:0px auto;
+            position:relative;
+            overflow:hidden;
+        }
+        .slide{
+            width:6400px;
+            display:flex;
+        }
+        .slide > li{
+            width:1600px;
+        }
+        i.fas{
+            position:absolute;
+            top:43%;
+            font-size:50px;
+            padding:20px;
+            background-color: rgba(0,0,0,.7);
+            cursor:pointer;
+            color:#fff;
+        }
+        .fa-angle-left{
+            left:0px;
+        }
+        .fa-angle-right{
+            right:0px;
+        }
+
+        /* about us style */
+        #about_us{
+            margin-top:50px;
+            border-top:3px solid #ff4646;
+            border-bottom:3px solid #ff4646;
+            padding:50px;
+            text-align:center;
+        }
+        #about_us_img{
+            display:inline-block;
+            vertical-align:top;
+        }
+        #about_us_txt{
+            text-align:left;
+            display:inline-block;
+            width:572px;
+            margin-left:100px;
+        }
+        #about_us_txt h1{
+            font-size:50px;
+        }
+        #about_us_txt h3{
+            font-size:30px;
+        }
+        #about_us_txt p{
+            font-size:20px;
+        }
+        
+
+        /* recruit */
+        #recruit{
+            border-bottom:3px solid #ff4646;
+            padding:50px;
+            text-align: center;
+        }
+        #recruit_img{
+            margin-top:50px;
+        }
+        #recruit_txt{
+            text-align:center;
+        }
+        #recruit_txt h1{
+            font-size:50px;
+        }
+        #recruit_txt p{
+            font-size:20px;
+        }
+
+        /* footer style*/
+        footer{
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        }
+
+        footer > address{
+        font-style:normal;
+        line-height:60px;
+        }
+        
+        /* top button style */
+        #top_btn{
+        position:fixed;
+        right:3%;
+        bottom:50px;
+        color:#fff;
+        background-color: #000;
+        font-size:20px;
+        padding:10px;
+        text-decoration: none;
+        }
+    </style>
+    <!-- adopt jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+    <!-- adopt fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        $(document).ready(function(){
+            
+            // 1. take last slide to first
+           $('.slide > li:last-child').insertBefore('.slide > li:first-child')
+
+           // 2. move -1600px to show 1st slide in the middle
+           $('.slide').css('margin-left','-1600px');
+
+           // 3. make move_left()
+           function move_left(){
+               $('.slide').animate({'margin-left':'-3200px'},500,function(){ //  * move -3200px to make it move !
+                   $('.slide > li:first-child').insertAfter('.slide li:last-child'); // take first-child to last
+                   $('.slide').css('margin-left','-1600px'); // 
+               });
+           }
+           // 4. make move_right()
+           function move_right(){
+               $('.slide').animate({'margin-left':'0px'},500,function(){
+                    $('.slide > li:last-child').insertBefore('.slide > li:first-child');
+                    $('.slide').css('margin-left','-1600px')
+               });
+           }
+
+           // 5. call move_left every 4 sec
+           let Timer = setInterval(move_left,4000);
+
+           // 6. implement left, right button
+           const l_btn = $('i.fa-angle-left'), r_btn = $('i.fa-angle-right');
+           l_btn.click(function(){
+               move_left();
+           })
+           r_btn.click(function(){
+               move_right();
+           })
+
+           // 7. clear Timer when mouse gets over the left, right button
+           $('i.fas').hover(function(){
+               clearInterval(Timer);
+           },function(){ // when mouse gets out of the button, set Timer again
+               Timer=setInterval(move_left,4000);
+           });
+
+           // move page when user clicks about us / recruit
+           let gnb = $('.navi > ul > li');
+           
+           gnb.click(function(){
+               let i = $(this).index() + 1;
+               console.log(i)
+
+               $('html,body').animate({scrollTop:$('main section').eq(i).offset().top},500);
+               return false;
+           })
+           
+    
+        });
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- logo -->
+        <h1>
+            <a href="#" title="to main page">
+                <img src="./asset/img/logo.png" alt="top logo">
+            </a>
+        </h1>
+        <!-- nav -->
+        <nav class="navi">
+            <ul>
+                <li><a href="#" title="about us" id="about_us_btn">About us</a></li>
+                <li><a href="#" title="recruit" id="recruit_btn">Recruit</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- main contents -->
+    <main>
+        <!-- moving banner -->
+        <section id="visual">
+            <ul class="slide">
+                <li><a href="#" title="페이지이동"><img src="./asset/img/testImg01.jpg" alt="배너"></a></li>
+                <li><a href="#" title="페이지이동"><img src="./asset/img/testImg02.jpg" alt="배너"></a></li>
+                <li><a href="#" title="페이지이동"><img src="./asset/img/testImg03.jpg" alt="배너"></a></li>
+                <li><a href="#" title="페이지이동"><img src="./asset/img/testImg04.jpg" alt="배너"></a></li>
+            </ul>
+            <i class="fas fa-angle-left"></i>
+            <i class="fas fa-angle-right"></i>
+        </section>
+        <!-- about us -->
+        <section id ="about_us">
+            <div id="about_us_img">
+                <img src="./asset/img/ceo_img.JPG" alt="ceo_img">
+            </div>
+            <div id="about_us_txt">
+                <h1>
+                    Chief Executive Officer
+                </h1>
+                <br>
+                <h3>
+                    Jin Woo Park
+                </h3>
+                <br>
+                <p>
+                    text goes here
+                </p>
+            </div>
+        </section>
+        <!-- recruit -->
+        <section id="recruit">
+            <div id="recruit_txt">
+                <h1>We're hiring!</h1>
+                <br>
+                <p>
+                    text goes here
+                </p>
+            </div>
+            <div id="recruit_img">
+                <img src="./asset/img/hiring.jpg" alt="hiringImg">
+            </div>
+        </section>
+        
+        <!-- top button -->
+        <a href="#" id="top_btn">top</a>
+        <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('#top_btn').fadeIn();
+                } 
+                else {
+                    $('#top_btn').fadeOut();
+                }
+            });
+            
+            $("#top_btn").click(function() {
+                $('html, body').animate({scrollTop : 0}, 400);
+                return false;
+            });
+        });
+        </script>       
+    </main>
+    
+    <!-- footer -->
+    <footer>
+        <address>
+            <span><p>E-mail : ###@###.###</p></span>
+            <span><p>Tel : +82) 010-####- ####</p></span>
+            Copyright &copy;2022 kurooru98 allrights reserved.
+        </address>
+    </footer>
+</body>
+</html>
