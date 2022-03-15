@@ -231,10 +231,10 @@
            // 6. implement left, right button
            const l_btn = $('i.fa-angle-left'), r_btn = $('i.fa-angle-right');
            l_btn.click(function(){
-               move_left();
+               move_right();
            })
            r_btn.click(function(){
-               move_right();
+               move_left();
            })
 
            // 7. clear Timer when mouse gets over the left, right button
@@ -244,7 +244,7 @@
                Timer=setInterval(move_left,4000);
            });
 
-           // move page when user clicks about us / recruit
+           // move page when user clicks about us / Services
            let gnb = $('.navi > ul > li');
            
            gnb.click(function(){
