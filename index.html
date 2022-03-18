@@ -58,19 +58,18 @@
         .slide > li{
             width:1280px;
         }
-        i.fas{
+        i.fa-solid{
             position:absolute;
-            top:43%;
-            font-size:50px;
+            top:41%;
+            font-size:45px;
             padding:20px;
-            background-color: rgba(0,0,0,.7);
             cursor:pointer;
             color:#fff;
         }
-        .fa-angle-left{
+        .fa-circle-arrow-left{
             left:0px;
         }
-        .fa-angle-right{
+        .fa-circle-arrow-right{
             right:0px;
         }
 
@@ -212,12 +211,12 @@
             // 1. take last slide to first
            $('.slide > li:last-child').insertBefore('.slide > li:first-child')
 
-           // 2. move -1600px to show 1st slide in the middle
+           // 2. move -1280px to show 1st slide in the middle
            $('.slide').css('margin-left','-1280px');
 
            // 3. make move_left()
            function move_left(){
-               $('.slide').animate({'margin-left':'-2560px'},500,function(){ //  * move -3200px to make it move !
+               $('.slide').animate({'margin-left':'-2560px'},500,function(){ //  * move -1280px to make it move !
                    $('.slide > li:first-child').insertAfter('.slide li:last-child'); // take first-child to last
                    $('.slide').css('margin-left','-1280px'); // 
                });
@@ -230,20 +229,20 @@
                });
            }
 
-           // 5. call move_left every 4 sec
-           let Timer = setInterval(move_left,4000);
+           // 5. call move_left every 3 sec
+           let Timer = setInterval(move_left,3000);
 
            // 6. implement left, right button
-           const l_btn = $('i.fa-angle-left'), r_btn = $('i.fa-angle-right');
+           const l_btn = $('i.fa-circle-arrow-left'), r_btn = $('i.fa-circle-arrow-right');
            l_btn.click(function(){
                move_right();
            })
            r_btn.click(function(){
                move_left();
            })
-
+        
            // 7. clear Timer when mouse gets over the left, right button
-           $('i.fas').hover(function(){
+           $('i.fa-solid').hover(function(){
                clearInterval(Timer);
            },function(){ // when mouse gets out of the button, set Timer again
                Timer=setInterval(move_left,4000);
@@ -294,8 +293,8 @@
                 <li><a href="#" title="페이지이동"><img src="./asset/img/banner3.jpeg" alt="배너"></a></li>
                 <li><a href="#" title="페이지이동"><img src="./asset/img/banner4.jpg" alt="배너"></a></li>
             </ul>
-            <i class="fas fa-angle-left"></i>
-            <i class="fas fa-angle-right"></i>
+            <i class="fa-solid fa-circle-arrow-left"></i>
+            <i class="fa-solid fa-circle-arrow-right"></i>
         </section>
         <!-- about us -->
         <section id ="about_us">
