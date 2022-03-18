@@ -15,11 +15,11 @@
             list-style:none;
         }
         html, body{
-            width:1600px;
+            width:1280px;
         }
         header{
             text-align:center;
-            margin-bottom:50px;
+            margin-bottom: 40px;
         }
         header > h1{
             border-bottom: 3px solid #A67951;
@@ -36,7 +36,7 @@
         }
         .navi > ul > li > a{
             text-decoration:none;
-            font-size: 30px;
+            font-size: 28px;
             color:#000;
         }
         .navi > ul > li:hover{
@@ -45,18 +45,18 @@
 
         /* main slide */
         #visual{
-            width:1600px;
-            height:950px;
+            width:1280px;
+            height:760px;
             margin:0px auto;
             position:relative;
             overflow:hidden;
         }
         .slide{
-            width:6400px;
+            width:5120px;
             display:flex;
         }
         .slide > li{
-            width:1600px;
+            width:1280px;
         }
         i.fas{
             position:absolute;
@@ -78,10 +78,10 @@
         #about_us{
             border-top:3px solid #A67951;
             border-bottom:3px solid #A67951;
-            padding:50px;
+            padding:40px;
             text-align:center;
-            padding-top:100px;
-            padding-bottom:100px;
+            padding-top:80px;
+            padding-bottom:80px;
         }
         #about_us_img{
             display:inline-block;
@@ -90,74 +90,72 @@
         #about_us_txt{
             text-align:left;
             display:inline-block;
-            width:750px;
-            margin-left:100px;
+            width:600px;
+            margin-left:80px;
             
         }
         #about_us_txt h1{
-            font-size:50px;
+            font-size:40px;
             font-family: 'Nanum Myeongjo', serif;
         }
         #about_us_txt h3{
-            font-size:30px;
+            font-size:24px;
             font-family: 'Nanum Myeongjo', serif;
         }
         #about_us_txt p{
-            font-size:20px;
-            line-height:40px;
+            font-size:16px;
+            line-height:38px;
         }
         
         /* services */
         #services{
             border-bottom:3px solid #A67951;
-            padding:30px;
+            padding:32px;
             text-align:center;
         }
         #services1{
-            margin-top:100px;
-            margin-bottom:150px;
+            margin-top:80px;
+            margin-bottom:80px;
         }
         #services_txt1{
-            padding-top:40px;
+            margin-top:45px;
             display:inline-block;
             text-align:left;
-            line-height:70px;
-            width:700px;
-            height:354px;
+            width:560px;
+            height:270px;
         }
         #services_txt1 h1{
-            font-size:50px;
+            font-size:40px;
             font-family: 'Nanum Myeongjo', serif;
         }
         #services_txt1 p{
-            font-size:20px;
-            line-height:40px;
+            font-size:16px;
+            line-height:38px;
         }
         #services_img1{
             display:inline-block;
             vertical-align: top;
         }
         #services2{
-            margin-bottom:100px;
+            margin-bottom:80px;
         }
         #services_txt2{
             padding-top: 150px;
             display:inline-block;
             text-align:left;
-            line-height:70px;
-            width:700px;
-            height:450px;
+            width:560px;
+            height:330px;
         }
         #services_txt2 h1{
-            font-size:50px;
+            font-size:40px;
             font-family: 'Nanum Myeongjo', serif;
         }
         #services_txt2 p{
-            font-size:20px;
-            line-height:40px;
+            font-size:16px;
+            line-height:38px;
         }
         #services_img2{
-            width:700px;
+            width:560px;
             text-align: left;
             display:inline-block;
             vertical-align: top;
@@ -171,12 +169,12 @@
         }
 
         footer > address{
-        padding-top:20px;
-        padding-bottom: 20px;
-        margin-left: 3%;
+        padding-top:16px;
+        padding-bottom: 16px;
+        margin-left: 4%;
         font-style:normal;
-        line-height:25px;
-        
+        line-height:20px;
+        font-size:15px;
         }
         
         /* top button style */
@@ -186,8 +184,8 @@
         bottom:50px;
         color:#fff;
         background-color: #000;
-        font-size:20px;
-        padding:10px;
+        font-size:16px;
+        padding:8px;
         text-decoration: none;
         }
     </style>
@@ -212,20 +210,20 @@
            $('.slide > li:last-child').insertBefore('.slide > li:first-child')
 
            // 2. move -1600px to show 1st slide in the middle
-           $('.slide').css('margin-left','-1600px');
+           $('.slide').css('margin-left','-1280px');
 
            // 3. make move_left()
            function move_left(){
-               $('.slide').animate({'margin-left':'-3200px'},500,function(){ //  * move -3200px to make it move !
+               $('.slide').animate({'margin-left':'-2560px'},500,function(){ //  * move -3200px to make it move !
                    $('.slide > li:first-child').insertAfter('.slide li:last-child'); // take first-child to last
-                   $('.slide').css('margin-left','-1600px'); // 
+                   $('.slide').css('margin-left','-1280px'); // 
                });
            }
            // 4. make move_right()
            function move_right(){
                $('.slide').animate({'margin-left':'0px'},500,function(){
                     $('.slide > li:last-child').insertBefore('.slide > li:first-child');
-                    $('.slide').css('margin-left','-1600px')
+                    $('.slide').css('margin-left','-1280px')
                });
            }
 
