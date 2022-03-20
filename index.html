@@ -72,7 +72,29 @@
         .fa-circle-arrow-right{
             right:0px;
         }
-
+        .c_btn_bot{
+            width:100%; /* for applying text-align */
+            position: absolute;
+            bottom:55px;
+            text-align: center;
+        }
+        .c_btn_bot > li{
+            width:40px;
+            height:20px;
+            display:inline-block;
+            background: #fff;
+            border-radius:30%;
+            list-style:none;
+            cursor:pointer;
+            transition:0.3s;
+            justify-content: space-around;
+        }
+        .on{
+            width:40px !important;
+            border-radius:30% !important;
+            background: #c8c8c8 !important;
+            justify-content: space-around;
+        }
         /* about us style */
         #about_us{
             border-top:3px solid #A67951;
@@ -219,6 +241,7 @@
                $('.slide').animate({'margin-left':'-2560px'},500,function(){ //  * move -1280px to make it move !
                    $('.slide > li:first-child').insertAfter('.slide li:last-child'); // take first-child to last
                    $('.slide').css('margin-left','-1280px'); // 
+                   $('.c_btn_bot li:last-child').insertBefore('.c_btn_bot li:first-child').addClass('on'-1);
                });
            }
            // 4. make move_right()
@@ -226,6 +249,7 @@
                $('.slide').animate({'margin-left':'0px'},500,function(){
                     $('.slide > li:last-child').insertBefore('.slide > li:first-child');
                     $('.slide').css('margin-left','-1280px')
+                    $('.c_btn_bot li:first-child').insertAfter('.c_btn_bot li:last-child').addClass('on'-1);
                });
            }
 
@@ -295,6 +319,12 @@
             </ul>
             <i class="fa-solid fa-circle-arrow-left"></i>
             <i class="fa-solid fa-circle-arrow-right"></i>
+            <ul class="c_btn_bot">
+                <li class="on">&nbsp;</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+            </ul>
         </section>
         <!-- about us -->
         <section id ="about_us">
