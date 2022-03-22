@@ -230,60 +230,76 @@
     <script>
         $(document).ready(function(){
             
-            // 1. take last slide to first
-           $('.slide > li:last-child').insertBefore('.slide > li:first-child')
+            let i = c = 0, onoff=1;
+            
+            // update 'on' class
+            function pagenum(){
+                $(".c_btn_bot>li").removeClass("on");
+                $(".c_btn_bot>li:nth-child("+(c+1)+")").addClass("on")
+            }
 
-           // 2. move -1280px to show 1st slide in the middle
-           $('.slide').css('margin-left','-1280px');
+            // when user clicks c_btn_bot>li -> take to propal img
+            $(".c_btn_bot>li").click(function(){
+                i = c - $(this).index();
+                c = $(this).index();
+                w += 1280 * i;
 
-           // 3. make move_left()
-           function move_left(){
-               $('.slide').animate({'margin-left':'-2560px'},500,function(){ //  * move -1280px to make it move !
-                   $('.slide > li:first-child').insertAfter('.slide li:last-child'); // take first-child to last
-                   $('.slide').css('margin-left','-1280px'); // 
-                   $('.c_btn_bot li:last-child').insertBefore('.c_btn_bot li:first-child').addClass('on'-1);
-               });
-           }
-           // 4. make move_right()
-           function move_right(){
-               $('.slide').animate({'margin-left':'0px'},500,function(){
-                    $('.slide > li:last-child').insertBefore('.slide > li:first-child');
-                    $('.slide').css('margin-left','-1280px')
-                    $('.c_btn_bot li:first-child').insertAfter('.c_btn_bot li:last-child').addClass('on'-1);
-               });
-           }
+                $(".slide").stop().animate({"margin-left":w}, 500);
+                pagenum();
+            });
 
-           // 5. call move_left every 3 sec
-           let Timer = setInterval(move_left,3000);
+            // make moveL
+            let w = 0;
+            function moveL(){
+                c++;
+                if(c==4){
+                    c=0;
+                };
+                pagenum();
+                $(".slide").stop().animate({"margin-left":w=-1280*c}, 500);
+            }
+            
+            // make moveR
+            function moveR(){
+                c--;
+                if(c==-1){
+                    c=3;
+                };
+                pagenum()
+                $(".slide").stop().animate({"margin-left":w=-1280*c},500);
+            }
+            
+            // call moveL every 4 sec
+            let Timer = setInterval(moveL, 4000);
 
-           // 6. implement left, right button
-           const l_btn = $('i.fa-circle-arrow-left'), r_btn = $('i.fa-circle-arrow-right');
-           l_btn.click(function(){
-               move_right();
-           })
-           r_btn.click(function(){
-               move_left();
-           })
+            // implement left, right button
+            const l_btn = $('i.fa-circle-arrow-left'), r_btn = $('i.fa-circle-arrow-right');
+            l_btn.click(function(){
+                moveR();
+            })
+            r_btn.click(function(){
+                moveL();
+            })
         
-           // 7. clear Timer when mouse gets over the left, right button
-           $('i.fa-solid').hover(function(){
-               clearInterval(Timer);
-           },function(){ // when mouse gets out of the button, set Timer again
-               Timer=setInterval(move_left,4000);
-           });
+            // clear Timer when mouse gets over the left, right button
+            $('i.fa-solid').hover(function(){
+                clearInterval(Timer);
+            },function(){ // when coursor gets out of the button, set Timer again
+                Timer=setInterval(moveL,4000);
+            });
 
-           // move page when user clicks about us / Services
-           let gnb = $('.navi > ul > li');
-           
-           gnb.click(function(){
-               let i = $(this).index() + 1;
-               console.log(i)
+            // move page when user clicks 'About us' / 'Services'
+            let gnb = $('.navi > ul > li');
+            
+            gnb.click(function(){
+                let i = $(this).index() + 1;
+                console.log(i)
 
-               $('html,body').animate({scrollTop:$('main section').eq(i).offset().top},500);
-               return false;
-           })
-           
-    
+                $('html,body').animate({scrollTop:$('main section').eq(i).offset().top},500);
+                return false;
+            })
+            
+        
         });
     </script>
 </head>
@@ -317,8 +333,10 @@
                 <li><a href="#" title="페이지이동"><img src="./asset/img/banner3.jpeg" alt="배너"></a></li>
                 <li><a href="#" title="페이지이동"><img src="./asset/img/banner4.jpg" alt="배너"></a></li>
             </ul>
+            
             <i class="fa-solid fa-circle-arrow-left"></i>
             <i class="fa-solid fa-circle-arrow-right"></i>
+            
             <ul class="c_btn_bot">
                 <li class="on">&nbsp;</li>
                 <li>&nbsp;</li>
@@ -384,6 +402,7 @@
             </div>
 
         </section>
+        
         <!-- top button -->
         <a href="#" id="top_btn">top</a>
         <script>
