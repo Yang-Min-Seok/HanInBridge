@@ -187,18 +187,26 @@
 
         /* footer style*/
         footer{
-        background-color: #333;
-        color: #fff;
-        text-align: left;
+            background-color: #333;
+            color: #fff;
+            text-align: left;
         }
-
-        footer > address{
-        padding-top:16px;
-        padding-bottom: 16px;
-        margin-left: 4%;
-        font-style:normal;
-        line-height:20px;
-        font-size:15px;
+        .logo{
+            padding-top: 50px;
+            padding-bottom: 0px;
+            padding-left: 7.7%;
+        }
+        .info{
+            padding-bottom:35px;
+            display:flex;
+            line-height: 70px;
+            font-size:20px;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        .copyright > p{
+            font-size:13px;
+            padding-left:7.7%;
+            padding-bottom: 20px;
         }
         
         /* top button style */
@@ -217,6 +225,9 @@
     <!-- adop font -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Gothic+Coding&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo&display=swap');
     </style>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo&display=swap');
@@ -310,7 +321,7 @@
         <!-- logo -->
         <h1>
             <a href="#" title="to main page">
-                <img src="./asset/img/logo.jpg" alt="top logo">
+                <img src="./asset/img/logo.jpeg" alt="top logo">
             </a>
         </h1>
         <!-- nav -->
@@ -426,12 +437,28 @@
     
     <!-- footer -->
     <footer>
-        <address>
-            <span><p>주소 : 서울특별시 서대문구 경기대로 58, 606호</p></span>
-            <span><p>Tel : +82) 10-8533-9724</p></span>
-            <span><p>사업자등록번호 : 693-08-01850</p></span>
-            Copyright &copy;2022 kurooru98 allrights reserved.
-        </address>
+
+        <div class="logo">
+            <img src="./asset/img/footer_logo.png" alt="footer_logo">
+        </div>
+
+        <div class="info">
+
+            <div class="adr">
+                <span><p>서울특별시 서대문구 경기대로 58, 606호</p></span>
+                <span><p>58, Kyonggidae-ro, Seodaemun-gu, Seoul, Republic of Korea 606</p></span>
+            </div>
+            
+            <div class="contact">
+                <span><p>Tel : +82) 10-8533-9724</p></span>
+                <span><p>사업자등록번호 : 693-08-01850</p></span>
+            </div>
+        </div>
+        
+        <div class="copyright">
+        <p>&copy;2022 kurooru98 allrights reserved.</p>
+        </div>
+    
     </footer>
 </body>
 </html>
