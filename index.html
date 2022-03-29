@@ -100,6 +100,19 @@
                 return false;
             })
             
+            // when user clicks #services_txt1_translate -> show #services_txt1_idn
+            $('#services_txt1_translate').click(function(){
+                $(this).fadeOut()
+                $('#services_txt1_idn').slideDown();
+                return false;
+            });
+
+            // when user clicks #services_txt2_translate -> show #services_txt2_idn
+            $('#services_txt2_translate').click(function(){
+                $(this).fadeOut()
+                $('#services_txt2_idn').slideDown();
+                return false;
+            });
         
         });
     </script>
@@ -129,10 +142,10 @@
         <!-- moving banner -->
         <section id="visual">
             <ul class="slide">
-                <li><a href="#" title="페이지이동"><img src="./asset/img/banner1.jpg" alt="배너"></a></li>
-                <li><a href="#" title="페이지이동"><img src="./asset/img/banner2.JPG" alt="배너"></a></li>
-                <li><a href="#" title="페이지이동"><img src="./asset/img/banner3.jpeg" alt="배너"></a></li>
-                <li><a href="#" title="페이지이동"><img src="./asset/img/banner4.jpg" alt="배너"></a></li>
+                <li><a href="#" title="페이지이동"><img src="./asset/img/banner1.jpg" alt="banner"></a></li>
+                <li><a href="#" title="페이지이동"><img src="./asset/img/banner2.JPG" alt="banner"></a></li>
+                <li><a href="#" title="페이지이동"><img src="./asset/img/banner3.jpeg" alt="banner"></a></li>
+                <li><a href="#" title="페이지이동"><img src="./asset/img/banner4.jpg" alt="banner"></a></li>
             </ul>
             
             <i class="fa-solid fa-circle-arrow-left"></i>
@@ -173,31 +186,43 @@
 
             <div id="services1">
                 <div id="services_txt1">
-                    <h1>Import & Export 
-                        <br> Consulting</h1>
+                    <h1>Import & Export Consulting</h1>
                     <br>
                     <p>
-                        인도네시아의 전반적인 사업 지식과 네트워크를 이용하여 <br>
-                        알맞는 방향으로 바이어들과 연결하여 보다 빠르게<br>
-                        인도네시아로 진출할 수 있습니다.
+                        인도네시아의 전반적인 사업 지식과 네트워크를 이용하여 알맞은 방향으로 바이어들과
+                        연결하여 보다 빠르게 인도네시아로 진출하는 것을 경험할 수 있습니다.<br>
+                        직접 전시회 참가 또는 미팅을 참여하여 진출 전략을 만들어 체계적이고 빠르게 인도네시아로 제품이 진출할 수 있도록 길을 마련합니다.<br>
+                        한인브릿지와 함께 인도네시아로 연결되는 것을 경험할 수 있습니다.
+                    </p>
+                    <a id = "services_txt1_translate" href="#">see translation in Indonesian</a>
+                    <p id="services_txt1_idn">
+                        Dengan pengetahuan tinggi dan network yang ketat di Indoneia, kami membantu agar Anda dapat merasakan memasuki Indonesia bisa lebih cepat dengan hubungan dan arah yang tepat.<br>
+                        Dengan berpartisipasi langsung dalam pameran atau rapat, kami membuat strategi dan membuka jalan bagi produk untuk masuk ke Indonesia secara sistematis dan cepat.<br>
+                        Bersama HANIN BRIDGE, Anda dapat merasa terhubung dengan Indonesia.
                     </p>
                 </div>
                 <div id="services_img1">
-                    <img src="./asset/img/import_export_img.jpg" alt="hiringImg">
+                    <img src="./asset/img/import_export_img.jpg" alt="imprt_export_img">
                 </div>
             </div>
 
             <div id="services2">
                 <div id="services_img2">
-                    <img src="./asset/img/translate_img.jpeg" alt="hiringImg">
+                    <img src="./asset/img/translate_img.jpeg" alt="translate_img">
                 </div>
                 <div id="services_txt2">
-                    <h1>Interpretation 
-                        <br>Consulting</h1>
+                    <h1>Interpretation Consulting</h1>
                     <br>
                     <p>
-                        수준 높은 통번역 결과물로 
-                        <br>인도네시아와의 언어적인 장벽을 넘어갈 수 있음을 경험해보세요.
+                        정확하고 신속한 통역 또는 번역이 인도네시아와 연결될 수 있는 생명줄입니다.<br>
+                        각종 분야의 통번역 경험과 네트워크를 바탕으로 소소한 통번역부터 규모가 큰 통번역까지 최고 퀄리티의 결과로 인도네시아와의 연결을 더욱 단단하게 만듭니다.<br>
+                        수준 높은 통번역 결과물로 인도네시아와의 언어적인 장벽을 넘어갈 수 있음을 경험해보세요.
+                    </p>
+                    <a id = "services_txt2_translate" href="#">see translation in Indonesian</a>
+                    <p id="services_txt2_idn">
+                        Interpretasi atau terjemahan yang akurat dan cepat adalah hal terpenting dalam komunikasi antara Indonesia.<br>
+                        Berdasarkan pengalaman dan jaringan interpretasi dan terjemahan kami di berbagai bidang, kami membuat koneksi dengan Indonesia lebih kuat dengan hasil yang berkualitas tertinggi dari interpretasi kecil hingga interpretasi skala besar.<br>
+                        Rasakan kemampuan untuk mengatasi kesulitan bahasa antara Indonesia dengan hasil terjemahan berkualitas tinggi.
                     </p>
                 </div>
             </div>

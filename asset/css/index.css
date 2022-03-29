@@ -93,10 +93,9 @@
     #about_us{
         border-top:3px solid #A67951;
         border-bottom:3px solid #A67951;
-        padding:40px;
         text-align:center;
-        padding-top:80px;
-        padding-bottom:80px;
+        padding-top:100px;
+        padding-bottom:100px;
         height:704px;
     }
     #about_us_img{
@@ -108,7 +107,6 @@
         display:inline-block;
         width:600px;
         margin-left:80px;
-        
     }
     #about_us_txt h1{
         font-size:40px;
@@ -126,58 +124,80 @@
     /* services */
     #services{
         border-bottom:3px solid #A67951;
-        padding-left:32px;
-        padding-right:32px;
         text-align:center;
     }
     #services1{
-        margin-top:80px;
-        margin-bottom:80px;
+        width:1280px;
+        margin-top:100px;
+        margin-bottom:100px;
     }
     #services_txt1{
-        margin-top:45px;
         display:inline-block;
         text-align:left;
-        width:560px;
-        height:270px;
+        width:500px;
+        height:550px;
     }
     #services_txt1 h1{
-        font-size:40px;
+        font-size:38px;
         font-family: 'Nanum Myeongjo', serif;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     #services_txt1 p{
         font-size:16px;
-        line-height:38px;
+        line-height:2;
+    }
+    #services_txt1_translate{
+        font-size:18px;
+        text-decoration:none;
+        color:#A67951;
+    }
+    #services_txt1_idn{
+        display:none;
+        font-size:16px;
+        line-height: 2;
     }
     #services_img1{
         display:inline-block;
         vertical-align: top;
+        width:500px;
+        height:550px;
+        margin-left: 100px;
     }
     #services2{
-        margin-bottom:80px;
+        margin-bottom:100px;
     }
     #services_txt2{
-        padding-top: 130px;
-        display:inline-block;
         text-align:left;
-        width:560px;
-        height:350px;
+        display:inline-block;
+        width:500px;
+        height:550px;
     }
     #services_txt2 h1{
-        font-size:40px;
+        font-size:38px;
         font-family: 'Nanum Myeongjo', serif;
         margin-bottom: 20px;
     }
     #services_txt2 p{
         font-size:16px;
-        line-height:38px;
+        line-height:2;
+    }
+    #services_txt2_translate{
+        font-size:18px;
+        text-decoration:none;
+        color:#A67951;
+    }
+    #services_txt2_idn{
+        display:none;
+        font-size:16px;
+        line-height: 2;
     }
     #services_img2{
-        width:560px;
+        width:500px;
+        height:550px;
         text-align: left;
         display:inline-block;
         vertical-align: top;
+        margin-right: 100px;
     }
 
     /* footer style*/
