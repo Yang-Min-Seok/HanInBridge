@@ -97,7 +97,6 @@
     }
     #title{
         letter-spacing: 20px; /* space between letter */
-        text-shadow: 1.5px 1.5px 1.5px #333; /* x, y, opacity, color */
         margin-bottom: 50px;
     }
     #title h2{
@@ -112,7 +111,7 @@
         padding: 30px 0px;
     }
     #title_txt p{
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         font-size:18px;
         line-height: 1.5;
     }
