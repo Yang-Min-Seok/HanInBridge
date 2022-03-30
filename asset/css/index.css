@@ -107,11 +107,12 @@
     }
     #title_txt{
         margin-bottom: 50px;
+        width:1180px;
+        border: 2.5px solid #A67951;
+        padding: 30px 0px;
     }
     #title_txt p{
-        border: 2.5px solid #A67951;
         letter-spacing: 3px;
-        padding: 30px 0px;
         font-size:18px;
         line-height: 1.5;
     }
