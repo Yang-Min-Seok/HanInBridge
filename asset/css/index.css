@@ -1,5 +1,3 @@
-    
-    
     *{
         margin:0 auto;
         padding:0;
@@ -96,17 +94,36 @@
         text-align:center;
         padding-top:100px;
         padding-bottom:100px;
-        height:704px;
+    }
+    #title{
+        letter-spacing: 20px; /* space between letter */
+        text-shadow: 1.5px 1.5px 1.5px #333; /* x, y, opacity, color */
+        margin-bottom: 30px;
+    }
+    #title h2{
+        font-size:35px;
+        font-family: 'Nanum Myeongjo', serif;
+        margin-bottom: 20px;
+    }
+    #title_txt{
+        margin-bottom: 100px;
+    }
+    #title_txt p{
+        border: 2.5px solid #A67951;
+        letter-spacing: 3px;
+        padding: 30px 0px;
+        font-size:18px;
+        line-height: 1.5;
     }
     #about_us_img{
         display:inline-block;
         vertical-align:top;
+        margin-right:100px;
     }
     #about_us_txt{
         text-align:left;
         display:inline-block;
         width:600px;
-        margin-left:80px;
     }
     #about_us_txt h1{
         font-size:40px;
@@ -117,7 +134,7 @@
         font-family: 'Nanum Myeongjo', serif;
     }
     #about_us_txt p{
-        font-size:16px;
+        font-size:18px;
         line-height:38px;
     }
 
@@ -129,7 +146,7 @@
     #services1{
         width:1280px;
         margin-top:100px;
-        margin-bottom:100px;
+        height:650px
     }
     #services_txt1{
         display:inline-block;
@@ -142,7 +159,7 @@
         font-family: 'Nanum Myeongjo', serif;
     }
     #services_txt1 p{
-        font-size:16px;
+        font-size:18px;
         line-height:2;
     }
     #services_txt1_translate{
@@ -152,7 +169,7 @@
     }
     #services_txt1_idn{
         display:none;
-        font-size:16px;
+        font-size:18px;
         line-height: 2;
     }
     #services_txt1_translate_hide{
@@ -168,7 +185,7 @@
         margin-left: 150px;
     }
     #services2{
-        margin-bottom:100px;
+        height:650px;
     }
     #services_txt2{
         text-align:left;
@@ -181,7 +198,7 @@
         font-family: 'Nanum Myeongjo', serif;
     }
     #services_txt2 p{
-        font-size:16px;
+        font-size:18px;
         line-height:2;
     }
     #services_txt2_translate{
@@ -191,7 +208,7 @@
     }
     #services_txt2_idn{
         display:none;
-        font-size:16px;
+        font-size:18px;
         line-height: 2;
     }
     #services_txt2_translate_hide{
