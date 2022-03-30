@@ -140,7 +140,6 @@
     #services_txt1 h1{
         font-size:38px;
         font-family: 'Nanum Myeongjo', serif;
-        margin-bottom: 20px;
     }
     #services_txt1 p{
         font-size:16px;
@@ -155,6 +154,11 @@
         display:none;
         font-size:16px;
         line-height: 2;
+    }
+    #services_txt1_translate_hide{
+        font-size:18px;
+        text-decoration: none;
+        color:#A67951;
     }
     #services_img1{
         display:inline-block;
@@ -175,7 +179,6 @@
     #services_txt2 h1{
         font-size:38px;
         font-family: 'Nanum Myeongjo', serif;
-        margin-bottom: 20px;
     }
     #services_txt2 p{
         font-size:16px;
@@ -190,6 +193,11 @@
         display:none;
         font-size:16px;
         line-height: 2;
+    }
+    #services_txt2_translate_hide{
+        font-size:18px;
+        text-decoration: none;
+        color:#A67951;
     }
     #services_img2{
         width:500px;
