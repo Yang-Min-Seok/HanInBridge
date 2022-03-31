@@ -111,6 +111,7 @@
         padding: 30px 0px;
     }
     #title_txt p{
+        height:122px;
         font-family: 'Nanum Gothic', sans-serif;
         letter-spacing: 2px;
         font-size:18px;
