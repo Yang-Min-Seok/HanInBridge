@@ -111,9 +111,11 @@
         padding: 30px 0px;
     }
     #title_txt p{
+        font-family: 'Nanum Gothic', sans-serif;
         letter-spacing: 2px;
         font-size:18px;
-        line-height: 1.5;
+        line-height: 1.7;
+        font-weight:bolder;
     }
     #about_us_img{
         display:inline-block;
