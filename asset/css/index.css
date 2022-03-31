@@ -237,12 +237,13 @@
         text-align: center;
     }
     .logo{
-        width:1080px;
+        width:980px;
         padding-top: 30px;
         padding-bottom: 0px;
         text-align:left;
     }
     .info{
+        width:1080px;
         text-align: left;
         padding-bottom:35px;
         display:flex;
@@ -251,7 +252,7 @@
         font-family: 'Nanum Gothic', sans-serif;
     }
     .copyright{
-        width:1080px;
+        width:980px;
         text-align: left;
     }
     .copyright > p{
