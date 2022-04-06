@@ -69,9 +69,41 @@ $(document).ready(function(){
         return false;
     })
     
+    // when user clicks #services_txt1_translate -> show #services_txt1_idn
+    $('#services_txt1_translate').click(function(){
+        $(this).hide();
+        $('#services_txt1_idn').slideDown();
+        $('#services_txt1_translate_hide').show();
+        return false;
+    });
+
+    // when user clicks #services_txt1_translate_hide -> hide #services_txt1_idn
+    $('#services_txt1_translate_hide').click(function(){
+        $(this).hide()
+        $('#services_txt1_translate').show();
+        $('#services_txt1_idn').slideUp();
+        return false;
+    });
+
+    // when user clicks #services_txt2_translate -> show #services_txt2_idn
+    $('#services_txt2_translate').click(function(){
+        $(this).hide()
+        $('#services_txt2_idn').slideDown();
+        $('#services_txt2_translate_hide').show();
+        return false;
+    });
+
+    // when user clicks #services_txt2_translate_hide -> hide #services_txt2_idn
+    $('#services_txt2_translate_hide').click(function(){
+        $(this).hide()
+        $('#services_txt2_translate').show();
+        $('#services_txt2_idn').slideUp();
+        return false;
+    });
 
 });
 
+// 
 $(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 50) {

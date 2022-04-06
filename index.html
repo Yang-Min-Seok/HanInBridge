@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./asset/css/index.css">
     
     <!-- adopt index.js -->
-    <script type="text/javascript" src="./asset/js/index.js"></script>
+    <script src="./asset/js/index.js"></script>
     
     <!-- adop font -->
     <style>
@@ -143,6 +143,49 @@
                 $('#services_txt2_translate').show();
                 $('#services_txt2_idn').slideUp();
                 return false;
+            });
+
+            // implemention of #top_btn
+            $(function() {
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 50) {
+                        $('#top_btn').fadeIn();
+                    } 
+                    else {
+                        $('#top_btn').fadeOut();
+                    }
+                });
+                
+                $("#top_btn").click(function() {
+                    $('html, body').animate({scrollTop : 0}, 400);
+                    return false;
+                });
+            });
+
+            // when user goes down to 'About us' section -> slideDown #title, #title_txt contents
+            $(function() {
+                $(window).scroll(function() {
+                    if($(this).scrollTop() > 300){
+                        $('#title').slideDown(2000);
+                        $('#title_txt').slideDown(2000);
+                    }
+                    else{
+                        $('#title, #title_txt').hide();
+                    }
+                })
+            });
+            
+            // when user goes down to 'About us' section -> slideDown #title, #title_txt contents
+            $(function() {
+                $(window).scroll(function() {
+                    if($(this).scrollTop() > 300){
+                        $('#title').slideDown(2000);
+                        $('#title_txt').slideDown(2000);
+                    }
+                    else{
+                        $('#title, #title_txt').hide();
+                    }
+                });
             });
 
         });
@@ -276,37 +319,6 @@
         
         <!-- top button -->
         <a href="#" id="top_btn">top</a>
-        <script>
-        $(function() {
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 50) {
-                    $('#top_btn').fadeIn();
-                } 
-                else {
-                    $('#top_btn').fadeOut();
-                }
-            });
-            
-            $("#top_btn").click(function() {
-                $('html, body').animate({scrollTop : 0}, 400);
-                return false;
-            });
-        });
-        </script>
-        <script>
-            // when user goes down to 'About us' section -> slideDown #title, #title_txt contents
-            $(function() {
-                $(window).scroll(function() {
-                    if($(this).scrollTop() > 300){
-                        $('#title').slideDown(2000);
-                        $('#title_txt').slideDown(2000);
-                    }
-                    else{
-                        $('#title, #title_txt').hide();
-                    }
-                })
-            })
-        </script>    
     </main>
     
     <!-- footer -->
