@@ -60,11 +60,8 @@ $(document).ready(function(){
 
     // move page when user clicks 'About us' / 'Services'
     let gnb = $('.navi > ul > li');
-    
     gnb.click(function(){
         let i = $(this).index() + 1;
-        console.log(i)
-
         $('html,body').animate({scrollTop:$('main section').eq(i).offset().top},500);
         return false;
     })
@@ -101,21 +98,47 @@ $(document).ready(function(){
         return false;
     });
 
-});
+    // implemention of #top_btn
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 50) {
+                $('#top_btn').fadeIn();
+            } 
+            else {
+                $('#top_btn').fadeOut();
+            }
+        });
+        
+        $("#top_btn").click(function() {
+            $('html, body').animate({scrollTop : 0}, 400);
+            return false;
+        });
+    });
 
-// 
-$(function() {
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 50) {
-            $('#top_btn').fadeIn();
-        } 
-        else {
-            $('#top_btn').fadeOut();
-        }
+    // when user goes down to 'About us' section -> slideDown #title, #title_txt contents
+    $(function() {
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 300){
+                $('#title').slideDown(2000);
+                $('#title_txt').slideDown(2000);
+            }
+            else{
+                $('#title, #title_txt').hide();
+            }
+        })
     });
     
-    $("#top_btn").click(function() {
-        $('html, body').animate({scrollTop : 0}, 400);
-        return false;
+    // when user goes down to 'About us' section -> slideDown #title, #title_txt contents
+    $(function() {
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 300){
+                $('#title').slideDown(2000);
+                $('#title_txt').slideDown(2000);
+            }
+            else{
+                $('#title, #title_txt').hide();
+            }
+        });
     });
+
 });

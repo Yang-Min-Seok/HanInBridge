@@ -24,172 +24,30 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    
+
     <!-- adopt index.css -->
     <link rel="stylesheet" href="./asset/css/index.css">
+
+    <!-- adopt jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     
     <!-- adopt index.js -->
     <script src="./asset/js/index.js"></script>
     
-    <!-- adop font -->
+    <!-- adopt font -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo&display=swap');
     </style>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo&display=swap');
     </style>
-    
-    <!-- adopt jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     
     <!-- adopt fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script>
-        $(document).ready(function(){
-            
-            let i = c = 0, onoff=1;
-            
-            // update 'on' class
-            function pagenum(){
-                $(".c_btn_bot>li").removeClass("on");
-                $(".c_btn_bot>li:nth-child("+(c+1)+")").addClass("on")
-            }
+    
+    
 
-            // when user clicks c_btn_bot>li -> take to propal img
-            $(".c_btn_bot>li").click(function(){
-                i = c - $(this).index();
-                c = $(this).index();
-                w += 1280 * i;
-
-                $(".slide").stop().animate({"margin-left":w}, 500);
-                pagenum();
-            });
-
-            // make moveL
-            let w = 0;
-            function moveL(){
-                c++;
-                if(c==4){
-                    c=0;
-                };
-                pagenum();
-                $(".slide").stop().animate({"margin-left":w=-1280*c}, 500);
-            }
-            
-            // make moveR
-            function moveR(){
-                c--;
-                if(c==-1){
-                    c=3;
-                };
-                pagenum()
-                $(".slide").stop().animate({"margin-left":w=-1280*c},500);
-            }
-            
-            // call moveL every 4 sec
-            let Timer = setInterval(moveL, 4000);
-
-            // implement left, right button
-            const l_btn = $('i.fa-circle-arrow-left'), r_btn = $('i.fa-circle-arrow-right');
-            l_btn.click(function(){
-                moveR();
-            })
-            r_btn.click(function(){
-                moveL();
-            })
-        
-            // clear Timer when mouse gets over the left, right button
-            $('i.fa-solid').hover(function(){
-                clearInterval(Timer);
-            },function(){ // when coursor gets out of the button, set Timer again
-                Timer=setInterval(moveL,4000);
-            });
-
-            // move page when user clicks 'About us' / 'Services'
-            let gnb = $('.navi > ul > li');
-            gnb.click(function(){
-                let i = $(this).index() + 1;
-                $('html,body').animate({scrollTop:$('main section').eq(i).offset().top},500);
-                return false;
-            })
-            
-            // when user clicks #services_txt1_translate -> show #services_txt1_idn
-            $('#services_txt1_translate').click(function(){
-                $(this).hide();
-                $('#services_txt1_idn').slideDown();
-                $('#services_txt1_translate_hide').show();
-                return false;
-            });
-
-            // when user clicks #services_txt1_translate_hide -> hide #services_txt1_idn
-            $('#services_txt1_translate_hide').click(function(){
-                $(this).hide()
-                $('#services_txt1_translate').show();
-                $('#services_txt1_idn').slideUp();
-                return false;
-            });
-
-            // when user clicks #services_txt2_translate -> show #services_txt2_idn
-            $('#services_txt2_translate').click(function(){
-                $(this).hide()
-                $('#services_txt2_idn').slideDown();
-                $('#services_txt2_translate_hide').show();
-                return false;
-            });
-
-            // when user clicks #services_txt2_translate_hide -> hide #services_txt2_idn
-            $('#services_txt2_translate_hide').click(function(){
-                $(this).hide()
-                $('#services_txt2_translate').show();
-                $('#services_txt2_idn').slideUp();
-                return false;
-            });
-
-            // implemention of #top_btn
-            $(function() {
-                $(window).scroll(function() {
-                    if ($(this).scrollTop() > 50) {
-                        $('#top_btn').fadeIn();
-                    } 
-                    else {
-                        $('#top_btn').fadeOut();
-                    }
-                });
-                
-                $("#top_btn").click(function() {
-                    $('html, body').animate({scrollTop : 0}, 400);
-                    return false;
-                });
-            });
-
-            // when user goes down to 'About us' section -> slideDown #title, #title_txt contents
-            $(function() {
-                $(window).scroll(function() {
-                    if($(this).scrollTop() > 300){
-                        $('#title').slideDown(2000);
-                        $('#title_txt').slideDown(2000);
-                    }
-                    else{
-                        $('#title, #title_txt').hide();
-                    }
-                })
-            });
-            
-            // when user goes down to 'About us' section -> slideDown #title, #title_txt contents
-            $(function() {
-                $(window).scroll(function() {
-                    if($(this).scrollTop() > 300){
-                        $('#title').slideDown(2000);
-                        $('#title_txt').slideDown(2000);
-                    }
-                    else{
-                        $('#title, #title_txt').hide();
-                    }
-                });
-            });
-
-        });
-    </script>
 </head>
 
 <body>
