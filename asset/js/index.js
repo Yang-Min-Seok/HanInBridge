@@ -131,14 +131,15 @@ $(document).ready(function(){
     // when user goes down to 'About us' section -> slideDown #title, #title_txt contents
     $(function() {
         $(window).scroll(function() {
-            if($(this).scrollTop() > 300){
+            // console.log($(window).scrollTop()); -> showing now px from top
+            if($(this).scrollTop() > 1100){
                 $('#title').slideDown(2000);
                 $('#title_txt').slideDown(2000);
+                return false
             }
             else{
                 $('#title, #title_txt').hide();
             }
         });
     });
-
 });
