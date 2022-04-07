@@ -119,7 +119,7 @@ $(document).ready(function(){
     $(function() {
         $(window).scroll(function() {
             // showing now px from top
-            console.log($(window).scrollTop());
+            // console.log($(window).scrollTop());
             if($(this).scrollTop() > 1100){
                 $('#title').slideDown(2000);
                 $('#title_txt').slideDown(2000);
@@ -129,5 +129,7 @@ $(document).ready(function(){
             }
         });
     });
+
+    
 
 });

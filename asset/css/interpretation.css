@@ -1,0 +1,24 @@
+/* default setting */
+*{
+    margin:0;
+    padding:0;
+}
+/* temporary setting */
+#wrap{
+    width:1000px;
+    height:1000px;
+    border:3px solid #A67951;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 100px;
+}
+#wrap h1{
+    margin-bottom: 50px;
+    font-size:50px;
+}
+#wrap h2{
+    font-size:40px;
+}
