@@ -115,17 +115,13 @@ $(document).ready(function(){
         });
     });
     
-    // when user goes down to 'About us' section -> slideDown #title, #title_txt contents
+    // when user goes down to 'About us' section -> slideDown #title_txt p
     $(function() {
         $(window).scroll(function() {
             // showing now px from top
             // console.log($(window).scrollTop());
             if($(this).scrollTop() > 1100){
-                $('#title').slideDown(2000);
-                $('#title_txt').slideDown(2000);
-            }
-            else{
-                $('#title, #title_txt').hide();
+                $('#title_txt p, #title h2').slideDown(1500);
             }
         });
     });

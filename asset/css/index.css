@@ -110,27 +110,28 @@
     #title{
         letter-spacing: 20px; /* space between letter */
         margin-bottom: 50px;
-        display:none;
+        height:100px;
     }
     #title h2{
         font-size:35px;
         font-family: 'Nanum Myeongjo', serif;
         margin-bottom: 20px;
+        display:none;
     }
     #title_txt{
         margin-bottom: 50px;
         width:1180px;
+        height:122px;
         border: 2.5px solid #A67951;
         padding: 30px 0px;
-        display:none;
     }
     #title_txt p{
-        height:122px;
         font-family: 'Nanum Gothic', sans-serif;
         letter-spacing: 2px;
         font-size:18px;
         line-height: 1.7;
         font-weight:bolder;
+        display:none;
     }
     #about_us_img{
         display:inline-block;
