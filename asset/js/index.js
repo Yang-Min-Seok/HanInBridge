@@ -126,6 +126,19 @@ $(document).ready(function(){
         });
     });
 
+    // when user hovers #services_img1 a -> change background-color
+    $('#services_img1 a').hover(function(){
+        $('#services_img1').css({'background-color':'#A67951','transition':'0.9s'})
+    },function(){
+        $('#services_img1').css({'background-color':'#fff','transition':'0.9s'})
+    })
+
+    // when user hovers #services_img2 a -> change background-color
+    $('#services_img2 a').hover(function(){
+        $('#services_img2').css({'background-color':'#A67951','transition':'0.9s'})
+    },function(){
+        $('#services_img2').css({'background-color':'#fff','transition':'0.9s'})
+    })
     
 
 });
