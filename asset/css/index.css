@@ -300,11 +300,11 @@
     footer{
         background-color: #5a5a5a;
         color: #fff;
-        text-align: center;
     }
     .logo{
         padding-top: 30px;
         padding-bottom: 0px;
+        margin-left: 7.5%;
     }
     .info{
         width:1280px;
@@ -319,7 +319,7 @@
         text-decoration: none;
     }
     .copyright{
-        
+        margin-left: 7.5%;
     }
     .copyright > p{
         font-size:13px;
