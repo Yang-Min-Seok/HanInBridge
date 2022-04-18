@@ -129,15 +129,19 @@ $(document).ready(function(){
     // when user hovers #services_img1 a -> change background-color
     $('#services_img1 a').hover(function(){
         $('#services_img1').css({'background-color':'#A67951','transition':'0.9s'})
+        $('#services_img1 a').css({'color':'#fff','transition':'0.9s'})
     },function(){
         $('#services_img1').css({'background-color':'#fff','transition':'0.9s'})
+        $('#services_img1 a').css({'color':'#000','transition':'0.9s'})
     });
 
-    // when user hovers #services_img2 a -> change background-color
+    // when user hovers #services_img2 a -> change background-color and color
     $('#services_img2 a').hover(function(){
         $('#services_img2').css({'background-color':'#A67951','transition':'0.9s'})
+        $('#services_img2 a').css({'color':'#fff','transition':'0.9s'})
     },function(){
         $('#services_img2').css({'background-color':'#fff','transition':'0.9s'})
+        $('#services_img2 a').css({'color':'#000','transition':'0.9s'})
     });
     
     // when user gets down over 1050px, align .navi class act

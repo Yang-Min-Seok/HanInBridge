@@ -244,6 +244,11 @@
         border-bottom: transparent;
         border-left: transparent;
         transform: translateX(235px) rotate(45deg); /* 시계방향으로 45도 회전 */
+        transition:0.7s;
+    }
+    #services_img1 a:hover::after{
+        border-color: #fff;
+        transform: translateX(240px) rotate(45deg);
     }
     #services2{
         height:650px;
@@ -305,6 +310,11 @@
         border-bottom: transparent;
         border-left: transparent;
         transform: translateX(235px) rotate(45deg); /* 시계방향으로 45도 회전 */
+        transition: 0.7s;
+    }
+    #services_img2 a:hover::after{
+        border-color: #fff;
+        transform: translateX(240px) rotate(45deg);
     }
     /* footer style*/
     footer{
