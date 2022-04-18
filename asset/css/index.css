@@ -14,11 +14,14 @@
         margin-bottom: 50px;
     }
     header > h1{
-        border-bottom: 3px solid #A67951;
         margin-top: 20px;
         padding-bottom:20px;
     }
-    header > nav{
+    header > .navi{
+        display:block;
+        height:40px;
+        line-height: 40px;
+        border-top: 3px solid #A67951;
         border-bottom: 3px solid #A67951;
         font-family: 'Nanum Myeongjo', serif;
     }
@@ -34,7 +37,14 @@
     .navi > ul > li:hover{
         opacity:0.5;
     }
-
+    .act{
+        margin:0 auto;
+        position:fixed !important;
+        top:30px;
+        width:1280px;
+        text-align: center;
+        border:none !important;
+    }
     /* main slide */
     #visual{
         width:1280px;
@@ -92,8 +102,8 @@
         border-top:3px solid #A67951;
         border-bottom:3px solid #A67951;
         text-align:center;
-        padding-top:50px;
-        padding-bottom:50px;
+        padding-top:100px;
+        padding-bottom:100px;
     }
     #about_us_header{
         font-family: 'Nanum Myeongjo', serif;
@@ -161,7 +171,7 @@
     #services{
         border-bottom:3px solid #A67951;
         text-align:center;
-        padding-top:50px;
+        padding-top:100px;
     }
     #services_header{
         font-family: 'Nanum Myeongjo', serif;
@@ -169,7 +179,7 @@
         height:50px;
         border-radius:30px;
         border:3px solid #A67951;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         padding-top: 10px;
     }
     #services_header h2{
@@ -319,7 +329,7 @@
         text-decoration: none;
     }
     .copyright{
-        
+
     }
     .copyright > p{
         font-size:13px;

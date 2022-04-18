@@ -140,5 +140,16 @@ $(document).ready(function(){
         $('#services_img2').css({'background-color':'#fff','transition':'0.9s'})
     });
     
+    // when user gets down over 1050px, align .navi class act
+    $(function(){
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 1050){
+                $('.navi').stop().addClass('act');
+            }
+            else{
+                $('.navi').stop().removeClass('act');
+            }
+        })
+    })
 
 });
