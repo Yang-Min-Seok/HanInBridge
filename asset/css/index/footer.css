@@ -1,0 +1,42 @@
+
+/* footer style*/
+footer{
+    background-color: #5a5a5a;
+    color: #fff;
+    text-align:center;
+}
+.logo{
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+.info{
+    width:1280px;
+    text-align: left;
+    padding-bottom:35px;
+    display:flex;
+    line-height: 70px;
+    font-size:20px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.contact p{
+    text-decoration: none;
+}
+.copyright{
+
+}
+.copyright > p{
+    font-size:13px;
+    padding-bottom: 20px;
+}
+
+/* top button style */
+#top_btn{
+position:fixed;
+right:3%;
+bottom:50px;
+color:#fff;
+background-color: #000;
+font-size:15px;
+padding:13px;
+text-decoration: none;
+}
