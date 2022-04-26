@@ -52,7 +52,7 @@ i.fa-solid{
 }
 /* about us style */
 #about_us{
-    max-width:1280px;
+    width:1280px;
     border-top:3px solid #A67951;
     border-bottom:3px solid #A67951;
     text-align:center;
@@ -124,7 +124,7 @@ i.fa-solid{
 
 /* services */
 #services{
-    max-width:1280px;
+    width:1280px;
     border-bottom:3px solid #A67951;
     text-align:center;
     padding-top:100px;
