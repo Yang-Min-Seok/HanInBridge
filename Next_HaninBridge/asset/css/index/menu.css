@@ -1,0 +1,58 @@
+#menu{
+
+}
+#menu .wrap{
+    margin-bottom: 5%;
+}
+#menu .wrap ul{
+    display:flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+#menu .wrap ul li{
+    display:block;
+    width:calc(100% / 3);
+    padding-bottom: 30px;
+    background-color: rgba(238, 238, 238, 0.437);
+    transition: all 0.7s;
+}
+#menu .wrap ul li:hover{
+    box-shadow: 9px 2px 32px rgba(0,0,0,0.3);
+}
+#menu .wrap ul li::before{
+    content:"";
+    display:block;
+    width:320px;
+    height:320px;
+    margin:30px auto;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#menu .wrap ul li:nth-child(1)::before{
+    background-image: url(/asset/img/aboutus.jpg);
+}
+#menu .wrap ul li:nth-child(2)::before{
+    background-image: url(/asset/img/interpretation.jpg);
+}
+#menu .wrap ul li:nth-child(3)::before{
+    background-image: url(/asset/img/import_export.jpg);
+}
+#menu .wrap ul li a{
+    font-family:'Nanum Gothic', sans-serif;
+    font-size:20px;
+    text-decoration: none;
+    display:block;
+    margin:0 auto;
+    width:180px;
+    line-height: 3;
+    border-radius:24px;
+    color:#fff;
+    background-color: #000;
+    text-align: center;
+    transition: all 0.7s;
+}
+#menu .wrap ul li a:hover{
+    background-color: #A67951;
+}

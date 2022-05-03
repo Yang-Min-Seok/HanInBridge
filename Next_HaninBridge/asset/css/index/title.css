@@ -1,0 +1,25 @@
+#title{
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+#title .wrap{
+    height:250px;
+}
+#title .wrap hgroup{
+    text-align: center;
+    color:#000;
+}
+#title .wrap hgroup .h3{
+    letter-spacing: 5px;
+    transform:translateX(-28%);
+    font-size:70px;
+    line-height: 1.5;
+    display:none;
+}
+#title .wrap hgroup .h1{
+    letter-spacing: 5px;
+    font-size:80px;
+    line-height: 1.5;
+    transform:translateX(3%);
+    display:none;
+}
