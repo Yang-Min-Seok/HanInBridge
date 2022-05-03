@@ -1,0 +1,45 @@
+#director{
+    
+}
+#director .wrap{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 3px solid #A67951;
+}
+#director .wrap h2{
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size:60px;
+    line-height: 1.8;
+    margin-bottom: 5%;
+}
+#director .wrap ul{
+    display:flex;
+    width:100%;
+    height:800px;
+    column-gap:80px;
+    justify-content: space-between;
+}
+#director .wrap ul li{
+    display:block;
+    height:100%;
+    width:calc(100% - 80px / 2);
+}
+#director .wrap ul li:nth-child(1){
+    background-image: url(/Next_HaninBridge/asset/img/ceo_img.jpg);
+    background-size: cover;
+}
+#director .wrap ul li:nth-child(2){
+
+}
+#director .wrap ul li:nth-child(2) h3{
+    font-size:50px;
+    font-family: 'Nanum Myeongjo', serif;
+    line-height: 2;
+    margin-top: 5%;
+}
+#director .wrap ul li:nth-child(2) p{
+    font-size:20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 2;
+}
