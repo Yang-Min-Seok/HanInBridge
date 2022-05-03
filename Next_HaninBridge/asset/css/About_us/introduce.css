@@ -1,0 +1,50 @@
+#introduce{
+    
+}
+#introduce .wrap{
+    margin-top: 3%;
+}
+#introduce .wrap a{
+    display:block;
+    width:20%;
+    height:150px;
+    background-image: url(/Next_HaninBridge/asset/img/logo.jpeg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin:0 auto;
+}
+#introduce .wrap hgroup{
+    height:180px;
+    text-align:center;
+    margin-bottom: 3%;
+}
+#introduce .wrap hgroup h3:nth-child(1){
+    font-family: 'Nanum Myeongjo', serif;
+    font-size:60px;
+    font-weight:bolder;
+    line-height: 1.8;
+    letter-spacing: 15px;
+    display:none;
+}
+#introduce .wrap hgroup h3:nth-child(2){
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bolder;
+    font-size:50px;
+    line-height: 1.8;
+    letter-spacing: 20px;
+    display:none;
+}
+#introduce .wrap div{
+    height:243px;
+    margin:0 auto;
+    width:90%;
+    border: 3px solid #A67951;
+    text-align: center;
+}
+#introduce .wrap div p{
+    padding:3%;
+    font-size: 21px;
+    line-height: 2;
+    font-weight: bold;
+    display:none;
+}
