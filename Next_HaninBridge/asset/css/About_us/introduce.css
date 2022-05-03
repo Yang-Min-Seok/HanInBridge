@@ -4,15 +4,6 @@
 #introduce .wrap{
     margin-top: 3%;
 }
-#introduce .wrap a{
-    display:block;
-    width:20%;
-    height:150px;
-    background-image: url(/Next_HaninBridge/asset/img/logo.jpeg);
-    background-size:contain;
-    background-repeat: no-repeat;
-    margin:0 auto;
-}
 #introduce .wrap hgroup{
     height:180px;
     text-align:center;

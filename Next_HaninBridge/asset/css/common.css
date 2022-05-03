@@ -39,3 +39,18 @@
 .p{
     font-size:15px;
 }
+/* header */
+header{
+    max-width: 1280px;
+    padding-top: 3%;
+    margin:0 auto;
+}
+header a{
+    display:block;
+    width:30%;
+    height:200px;
+    background-image: url(/Next_HaninBridge/asset/img/logo.jpeg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
