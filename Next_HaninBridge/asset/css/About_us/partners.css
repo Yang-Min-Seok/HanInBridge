@@ -1,50 +1,38 @@
 #partners{
-    margin-top: 50px;
+    
 }
 #partners .wrap{
     border-top: 3px solid #A67951;
-    border-bottom: 3px solid #A67951;
-    padding-bottom: 50px;
 }
 #partners .wrap h3{
-    padding-top: 50px;
-    font-size:60px;
     font-family: 'Nanum Myeongjo', serif;
+    font-size: 60px;
     text-align: center;
-    margin-bottom: 50px;
+    line-height: 3;
 }
-#partners .wrap div{
-    width:100%;
-    height:720px;
-    margin:0px auto;
-    position:relative;
-    overflow:hidden;
+#partners .wrap .swiper {
+    border: 3px solid #A67951;
+    width: 100%;
+    height: 700px;
 }
-#partners .wrap div ul{
-    width: 400%;
-    display: flex;
-}
-#partners .wrap div ul li{
-    width: calc(100% / 4)
-}
-#partners .wrap div ul li a{
-    
-}
-#partners .wrap div ul li a img{
+#partners .wrap .swiper .swiper-wrapper{
 
 }
-#partners .wrap i.fa-solid{
-    position:absolute;
-    z-index: 1;
-    top:88%;
-    font-size:40px;
-    padding:20px;
-    cursor:pointer;
-    color:#c8c8c8;
+#partners .wrap .swiper .swiper-wrapper .swiper-slide{
+
 }
-#partners .wrap .fa-circle-arrow-left{
-    left:0px;
+#partners .wrap .swiper .swiper-pagination-bullet{
+    width:25px;
+    height:25px;
 }
-#partners .wrap .fa-circle-arrow-right{
-    right:0px;
+#partners .wrap .swiper .swiper-pagination-bullet-active{
+    background-color: #A67951;
+}
+#partners .wrap .swiper .swiper-button-prev{
+    left:3%;
+    color: #A67951;
+}
+#partners .wrap .swiper .swiper-button-next{
+    right:3%;
+    color: #A67951;
 }
