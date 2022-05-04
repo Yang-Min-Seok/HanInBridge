@@ -10,10 +10,11 @@
     column-gap: 20px;
 }
 #menu .wrap ul li{
+    border:2px solid #A67951;
     display:block;
     width:calc(100% / 3);
     padding-bottom: 30px;
-    background-color: rgba(238, 238, 238, 0.437);
+    background-color: #fff;
     transition: all 0.7s;
 }
 #menu .wrap ul li:hover{
@@ -49,10 +50,10 @@
     line-height: 3;
     border-radius:24px;
     color:#fff;
-    background-color: #000;
+    background-color: #A67951;
     text-align: center;
     transition: all 0.7s;
 }
 #menu .wrap ul li a:hover{
-    background-color: #A67951;
+    background-color: #000;
 }
