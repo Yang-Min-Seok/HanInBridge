@@ -13,7 +13,7 @@
 #partners .wrap .swiper {
     border: 3px solid #A67951;
     width: 100%;
-    height: 700px;
+    height: 720px;
 }
 #partners .wrap .swiper .swiper-wrapper{
 
@@ -22,8 +22,7 @@
 
 }
 #partners .wrap .swiper .swiper-pagination-bullet{
-    width:25px;
-    height:25px;
+    
 }
 #partners .wrap .swiper .swiper-pagination-bullet-active{
     background-color: #A67951;
