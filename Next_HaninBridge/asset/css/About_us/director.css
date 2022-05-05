@@ -1,10 +1,11 @@
 #director{
-    
+    margin-top: 100px;
 }
 #director .wrap{
-    margin-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 100px;
     border-bottom: 3px solid #A67951;
+    border-top: 3px solid #A67951;
 }
 #director .wrap h2{
     text-align: center;
@@ -12,6 +13,7 @@
     font-size:60px;
     line-height: 1.8;
     margin-bottom: 5%;
+    letter-spacing: 5px;
 }
 #director .wrap ul{
     display:flex;
@@ -30,16 +32,19 @@
     background-size: cover;
 }
 #director .wrap ul li:nth-child(2){
-
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #director .wrap ul li:nth-child(2) h3{
     font-size:50px;
     font-family: 'Nanum Myeongjo', serif;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 3px solid #A67951;
     line-height: 2;
-    margin-top: 5%;
 }
 #director .wrap ul li:nth-child(2) p{
     font-size:20px;
-    font-family: 'Nanum Gothic', sans-serif;
-    line-height: 2;
+    line-height: 2.5;
 }
