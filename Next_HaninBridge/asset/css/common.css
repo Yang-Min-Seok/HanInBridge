@@ -54,3 +54,32 @@ header a{
     background-repeat: no-repeat;
     margin: 0 auto;
 }
+/* footer */
+footer{
+    
+}
+footer .wrap{
+    padding-top: 40px;
+    background-color: #5a5a5a;
+}
+footer .wrap div{
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer .wrap > ul{
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: space-around;
+}
+footer .wrap ul li{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size:20px;
+    color:#fff;
+    line-height: 2;
+}
+footer .wrap p{
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size:18px;
+    color:#fff;
+}
