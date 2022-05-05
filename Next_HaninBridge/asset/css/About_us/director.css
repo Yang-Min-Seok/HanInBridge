@@ -28,7 +28,7 @@
     width:calc(100% - 80px / 2);
 }
 #director .wrap ul li:nth-child(1){
-    background-image: url(/Next_HaninBridge/asset/img/ceo_img.jpg);
+    background-image: url();
     background-size: cover;
 }
 #director .wrap ul li:nth-child(2){
@@ -39,12 +39,12 @@
 #director .wrap ul li:nth-child(2) h3{
     font-size:50px;
     font-family: 'Nanum Myeongjo', serif;
-    margin-bottom: 30px;
     text-align: center;
+    line-height: 2.5;
     border-bottom: 3px solid #A67951;
-    line-height: 2;
 }
 #director .wrap ul li:nth-child(2) p{
     font-size:20px;
     line-height: 2.5;
+    padding: 25px;
 }
