@@ -1,0 +1,37 @@
+#introduce{
+    
+}
+#introduce .wrap{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-top: 3px solid #A67951;
+}
+#introduce .wrap hgroup{
+    margin-top: 50px;
+    text-align: center;
+}
+#introduce .wrap hgroup h3{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 50px;
+    line-height: 2;
+    letter-spacing: 10px;
+    transform:translateX(-25%);
+}
+#introduce .wrap hgroup h2{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 60px;
+    line-height: 2;
+    letter-spacing: 7px;
+    transform:translateX(20%);
+}
+#introduce .wrap div{
+    margin:0 auto;
+    width:90%;
+    height:300px; /* temp */
+    border: 3px solid #A67951;
+    padding:30px;
+    box-sizing: border-box;
+}
+#introduce .wrap div p{
+
+}
