@@ -20,11 +20,26 @@
     display:flex;
     column-gap: 20px;
     height:500px;
-    box-sizing: border-box;
 }
 #menu .wrap .general ul li:nth-child(1){
     width: 500px;
     border: 3px solid #a67951;
+    box-sizing: border-box;
+}
+#menu .wrap .general ul li:nth-child(1) .swiper .swiper-button-prev{
+    left:5%;
+    color:#a67951;
+}
+#menu .wrap .general ul li:nth-child(1) .swiper .swiper-button-next{
+    right:5%;
+    color:#a67951;
+}
+#menu .wrap .general ul li:nth-child(1) .swiper .swiper-wrapper div{
+    width:100%;
+    height:500px;
+}
+#menu .wrap .general ul li:nth-child(1) .swiper .swiper-pagination-bullet-active{
+    background-color:#a67951;
 }
 #menu .wrap .general ul li:nth-child(2){
     width: calc(100% - 532px);
@@ -46,7 +61,6 @@
     display:flex;
     column-gap: 20px;
     height:500px;
-    box-sizing: border-box;
 }
 #menu .wrap .document ul li:nth-child(1){
     width: calc(100% - 532px);
@@ -55,6 +69,22 @@
 #menu .wrap .document ul li:nth-child(2){
     width: 500px;
     border: 3px solid #a67951;
+    box-sizing: border-box;
+}
+#menu .wrap .document ul li:nth-child(2) .swiper .swiper-button-prev{
+    left:5%;
+    color:#a67951;
+}
+#menu .wrap .document ul li:nth-child(2) .swiper .swiper-button-next{
+    right:5%;
+    color:#a67951;
+}
+#menu .wrap .document ul li:nth-child(2) .swiper .swiper-wrapper div{
+    width:100%;
+    height:500px;
+}
+#menu .wrap .document ul li:nth-child(2) .swiper .swiper-pagination-bullet-active{
+    background-color:#a67951;
 }
 #menu .wrap .phone{
 
@@ -71,11 +101,26 @@
     display:flex;
     column-gap: 20px;
     height:500px;
-    box-sizing: border-box;
 }
 #menu .wrap .phone ul li:nth-child(1){
     width: 500px;
     border: 3px solid #a67951;
+    box-sizing: border-box;
+}
+#menu .wrap .phone ul li:nth-child(1) .swiper .swiper-button-prev{
+    left:5%;
+    color:#a67951;
+}
+#menu .wrap .phone ul li:nth-child(1) .swiper .swiper-button-next{
+    right:5%;
+    color:#a67951;
+}
+#menu .wrap .phone ul li:nth-child(1) .swiper .swiper-wrapper div{
+    width:100%;
+    height:500px;
+}
+#menu .wrap .phone ul li:nth-child(1) .swiper .swiper-pagination-bullet-active{
+    background-color:#a67951;
 }
 #menu .wrap .phone ul li:nth-child(2){
     width: calc(100% - 532px);
