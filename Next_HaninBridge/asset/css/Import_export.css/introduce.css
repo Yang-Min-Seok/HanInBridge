@@ -1,0 +1,35 @@
+#introduce{
+    
+}
+#introduce .wrap{
+    margin-top: 50px;
+    border-top: 3px solid #A67951;
+}
+#introduce .wrap hgroup{
+    width:80%;
+    margin:0 auto;
+}
+#introduce .wrap hgroup h3{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size:60px;
+    letter-spacing: 7px;
+    line-height: 3;
+    text-align: center;
+}
+#introduce .wrap hgroup h4{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size:50px;
+    line-height: 2;
+    text-align: center;
+}
+#introduce .wrap div{
+    width: 80%;
+    margin: 0 auto;
+    height: 400px;
+    border: 3px solid #A67951;
+    padding: 30px;
+    box-sizing: border-box;
+}
+#introduce .wrap div p{
+
+}
