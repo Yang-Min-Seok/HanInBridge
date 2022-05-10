@@ -22,7 +22,6 @@
 }
 #contact .wrap ul li{
     width: calc(100% - 20px / 2);
-    
 }
 #contact .wrap ul li:nth-child(1){
     background-image: url(/Next_HaninBridge/asset/img/contact.jpg);
