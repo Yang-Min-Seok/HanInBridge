@@ -4,6 +4,8 @@
 #introduce .wrap{
     margin-top: 50px;
     border-top: 3px solid #A67951;
+    padding-bottom: 50px;
+    border-bottom: 3px solid #A67951;
 }
 #introduce .wrap hgroup{
     width:80%;
