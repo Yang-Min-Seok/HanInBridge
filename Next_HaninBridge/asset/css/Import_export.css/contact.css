@@ -22,12 +22,14 @@
 }
 #contact .wrap ul li{
     width: calc(100% - 20px / 2);
-    border: 3px solid #A67951;
-    box-sizing: border-box;
-}
-#contact .wrap ul li:nth-child(1){
     
 }
+#contact .wrap ul li:nth-child(1){
+    background-image: url(/Next_HaninBridge/asset/img/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 #contact .wrap ul li:nth-child(2){
-
+    border: 3px solid #A67951;
+    box-sizing: border-box;
 }
