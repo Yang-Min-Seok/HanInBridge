@@ -1,0 +1,83 @@
+/* do not show menu bar for responsive (higher than 269px) */
+#responsive_menu{
+    display:none;
+}
+@media screen and (max-width:768px){ /* for typical smartphone */
+    
+    /* original menu */
+    #menu{
+        
+    }
+    #menu .wrap{
+
+    } 
+    #menu .wrap ul{
+        display:none;
+    }
+    #menu .wrap ul li{
+        
+    }
+    #menu .wrap ul li a{
+
+    }
+    
+    /* responsive_menu */
+    #responsive_menu{
+        display:block;
+    }
+    #responsive_menu .wrap{
+        margin-top: 50px;
+        width:80%;
+    }
+    #responsive_menu .wrap ul{
+        
+    }
+    #responsive_menu .wrap ul li{
+        height:150px;
+        border-radius: 50px;
+    }
+    #responsive_menu .wrap ul li:nth-child(1){
+        background-image: url(/Next_HaninBridge/asset/img/aboutus.jpg);
+        background-position:right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    #responsive_menu .wrap ul li:nth-child(2){
+        background-image: url(/Next_HaninBridge/asset/img/interpretation.jpg);
+        background-position:right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    #responsive_menu .wrap ul li:nth-child(3){
+        background-image: url(/Next_HaninBridge/asset/img/import_export.jpg);
+        background-position:right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #responsive_menu .wrap ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Nanum Myeongjo', serif;
+        font-size:30px;
+        display:block;
+        width:250px;
+        background-color: #A67951;
+        line-height:2;
+        text-align: center;
+        border-radius: 20px;
+    }
+}
