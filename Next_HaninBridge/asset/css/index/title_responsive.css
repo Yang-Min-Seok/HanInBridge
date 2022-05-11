@@ -1,0 +1,17 @@
+@media screen and (max-width:768px){ /* for typical smartphone */
+    #title{
+
+    }
+    #title .wrap{
+        height:180px !important;
+    }
+    #title .wrap hgroup{
+
+    }
+    #title .wrap hgroup h3{
+        font-size:60px !important;
+    }
+    #title .wrap hgroup h1{
+        font-size:50px !important;
+    }
+}
