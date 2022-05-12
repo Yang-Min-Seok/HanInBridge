@@ -1,4 +1,4 @@
-/* do not show menu bar for responsive (higher than 269px) */
+/* do not show menu bar for responsive (wider than 769px) */
 #responsive_menu{
     display:none;
 }
