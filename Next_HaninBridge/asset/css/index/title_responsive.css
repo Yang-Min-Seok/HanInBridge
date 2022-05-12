@@ -3,16 +3,17 @@
 
     }
     #title .wrap{
-        height:180px !important;
+        height:150px !important;
         margin-bottom: 0 !important;
+        margin-top: 10% !important;
     }
     #title .wrap hgroup{
 
     }
     #title .wrap hgroup h3{
-        font-size:60px !important;
+        font-size:50px !important;
     }
     #title .wrap hgroup h1{
-        font-size:50px !important;
+        font-size:45px !important;
     }
 }
