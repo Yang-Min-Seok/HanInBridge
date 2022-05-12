@@ -1,8 +1,9 @@
 #title{
-    margin-top: 5%;
-    margin-bottom: 3%;
+
 }
 #title .wrap{
+    margin-top: 5%;
+    margin-bottom: 3%;
     height:250px;
 }
 #title .wrap hgroup{

@@ -35,6 +35,8 @@
     #responsive_menu .wrap ul li{
         height:150px;
         border-radius: 50px;
+        border: 2px solid #A67951;
+        box-shadow: 9px 2px 32px rgba(0,0,0,0.3);
     }
     #responsive_menu .wrap ul li:nth-child(1){
         background-image: url(/Next_HaninBridge/asset/img/aboutus.jpg);
@@ -75,9 +77,9 @@
         font-size:30px;
         display:block;
         width:250px;
-        background-color: #A67951;
         line-height:2;
         text-align: center;
         border-radius: 20px;
+        background-color: rgba(166,121,81,0.8);
     }
 }

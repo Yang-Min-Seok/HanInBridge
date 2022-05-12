@@ -4,6 +4,7 @@
     }
     #title .wrap{
         height:180px !important;
+        margin-bottom: 0 !important;
     }
     #title .wrap hgroup{
 
