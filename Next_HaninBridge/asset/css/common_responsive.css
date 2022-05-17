@@ -1,0 +1,30 @@
+@media screen and (max-width:768px){ /* for typical smartphone */
+
+    /* header */
+    header{
+
+    }
+    header a{
+        height:150px !important;
+    }
+
+    /* footer */
+    footer{
+
+    }
+    footer .wrap{
+        padding-top: 20px;
+    }
+    footer .wrap div{
+        
+    }
+    footer .wrap > ul{
+
+    }
+    footer .wrap ul li{
+        font-size:15px !important;
+    }
+    footer .wrap p{
+        font-size:13px !important;
+    }
+}
