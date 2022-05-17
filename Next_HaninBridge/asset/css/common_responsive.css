@@ -13,7 +13,7 @@
 
     }
     footer .wrap{
-        padding-top: 20px;
+        
     }
     footer .wrap div{
         
@@ -26,5 +26,8 @@
     }
     footer .wrap p{
         font-size:13px !important;
+    }
+    #top_btn{
+        display:none !important;
     }
 }
