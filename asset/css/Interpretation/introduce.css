@@ -29,11 +29,16 @@
 #introduce .wrap div{
     margin:0 auto;
     width:90%;
-    height:300px; /* temp */
+    height:200px; /* temp */
     border: 3px solid #A67951;
-    padding: 30px;
     box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #introduce .wrap div p{
-
+    font-size:25px;
+    line-height: 2.5;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
 }
