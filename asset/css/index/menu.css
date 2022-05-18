@@ -32,13 +32,13 @@
     background-repeat: no-repeat;
 }
 #menu .wrap ul li:nth-child(1)::before{
-    background-image: url(/Next_HaninBridge/asset/img/aboutus.jpg);
+    background-image: url(/asset/img/aboutus.jpg);
 }
 #menu .wrap ul li:nth-child(2)::before{
-    background-image: url(/Next_HaninBridge/asset/img/interpretation.jpg);
+    background-image: url(/asset/img/interpretation.jpg);
 }
 #menu .wrap ul li:nth-child(3)::before{
-    background-image: url(/Next_HaninBridge/asset/img/import_export.jpg);
+    background-image: url(/asset/img/import_export.jpg);
 }
 #menu .wrap ul li a{
     font-family:'Nanum Gothic', sans-serif;
