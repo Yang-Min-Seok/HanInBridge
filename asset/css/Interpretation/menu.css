@@ -44,6 +44,16 @@
 #menu .wrap .general ul li:nth-child(2){
     width: calc(100% - 532px);
     border: 3px solid #a67951;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#menu .wrap .general ul li:nth-child(2) p{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 23px;
+    line-height: 2.5;
 }
 #menu .wrap .document{
 
@@ -65,6 +75,16 @@
 #menu .wrap .document ul li:nth-child(1){
     width: calc(100% - 532px);
     border: 3px solid #a67951;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#menu .wrap .document ul li:nth-child(1) p{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 23px;
+    line-height: 2.5;
 }
 #menu .wrap .document ul li:nth-child(2){
     width: 500px;
@@ -125,4 +145,14 @@
 #menu .wrap .phone ul li:nth-child(2){
     width: calc(100% - 532px);
     border: 3px solid #a67951;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#menu .wrap .phone ul li:nth-child(2) p{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 23px;
+    line-height: 2.5;
 }
