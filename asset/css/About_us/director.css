@@ -44,9 +44,10 @@
     text-align: center;
     line-height: 2.5;
     border-bottom: 3px solid #A67951;
+    margin-bottom: 20px;
 }
 #director .wrap ul li:nth-child(2) p{
-    font-size:20px;
+    font-size:19px;
     line-height: 2;
     padding: 15px;
     font-family: 'Nanum Gothic', sans-serif;
