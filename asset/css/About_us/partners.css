@@ -18,8 +18,35 @@
 #partners .wrap .swiper .swiper-wrapper{
 
 }
-#partners .wrap .swiper .swiper-wrapper .swiper-slide{
-    
+#partners .wrap .swiper .swiper-wrapper .img1{
+    background-image: url(/asset/img/partners/KCC공장.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+#partners .wrap .swiper .swiper-wrapper .img2{
+    background-image: url(/asset/img/partners/KCC본사.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+#partners .wrap .swiper .swiper-wrapper .img3{
+    background-image: url(/asset/img/partners/KCC글라스_로고.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#partners .wrap .swiper .swiper-wrapper .img4{
+    background-image: url(/asset/img/partners/adapt.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#partners .wrap .swiper .swiper-wrapper .img5{
+    background-image: url(/asset/img/partners/innoderm.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 #partners .wrap .swiper .swiper-pagination-bullet{
     
