@@ -18,7 +18,7 @@
 #director .wrap ul{
     display:flex;
     width:100%;
-    height:900px;
+    height:1000px;
     column-gap:80px;
     justify-content: space-between;
 }
