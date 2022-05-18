@@ -8,7 +8,7 @@
 #interpreter .wrap hgroup{
     width:80%;
     margin:0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     opacity:0.1;
 }
 #interpreter .wrap hgroup h2{
@@ -21,69 +21,82 @@
     font-size: 35px;
     text-align:right;
 }
-#interpreter .wrap ul{
+#interpreter .wrap .pjw{
     display:flex;
-    column-gap:20px;
-    padding:0 50px;
-    box-sizing: border-box;
+    margin:0 auto;
+    justify-content: space-between;
+    width:90%;
+    height:900px;
+    column-gap: 50px;
+    margin-bottom: 100px;
 }
-#interpreter .wrap ul li{
-    width:calc(100% / 4 - 20px / 4);
-    height:650px;
-    box-sizing: border-box;
-}
-#interpreter .wrap ul li:nth-child(1){
+#interpreter .wrap .pjw li:nth-child(1){
+    width:calc(100% / 2 - 50px / 2);
     background-image: url(/asset/img/interpreter/박진우_대표.jpeg);
+    background-repeat:no-repeat;
     background-size:cover;
-    background-repeat: no-repeat;
-    background-position-x: -200px;
+    background-position-x: -100px;
 }
-#interpreter .wrap ul li:nth-child(2){
+#interpreter .wrap .pjw li:nth-child(2){
+    width:calc(100% / 2 - 50px / 2);
+    border: 2px solid #a67951;
+    box-sizing: border-box;
     display:flex;
     flex-direction: column;
     justify-content: center;
 }
-#interpreter .wrap ul li:nth-child(2) h3{
+#interpreter .wrap .pjw li:nth-child(2) h3{
+    font-size:40px;
     font-family: 'Nanum Myeongjo', serif;
-    font-size:25px;
-    border-bottom: 2px solid #A67951;
+    text-align: center;
     line-height: 2.5;
+    border-bottom: 2px solid #A67951;
     margin-bottom: 20px;
+}
+#interpreter .wrap .pjw li:nth-child(2) p{
+    font-size:18px;
+    line-height: 2;
+    padding: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight:300;
     text-align: center;
 }
-#interpreter .wrap ul li:nth-child(2) p{
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: 15px;
-    text-align: left;
-    line-height: 1.2;
-    font-weight: 300;
+#interpreter .wrap .yth{
+    display:flex;
+    margin:0 auto;
+    justify-content: space-between;
+    width:90%;
+    height:750px;
+    column-gap: 50px;
 }
-#interpreter .wrap ul li:nth-child(3){
-    background-image: url(/asset/img/interpreter/양태훈_팀장.jpeg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position-x: -30px;
-}
-#interpreter .wrap ul li:nth-child(4){
-    padding-top: 20px;
+#interpreter .wrap .yth li:nth-child(1){
+    width:calc(100% / 2 - 50px / 2);
+    border: 2px solid #a67951;
     box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
-#interpreter .wrap ul li:nth-child(4) h3{
+#interpreter .wrap .yth li:nth-child(1) h3{
+    font-size:40px;
     font-family: 'Nanum Myeongjo', serif;
-    font-size:25px;
-    border-bottom: 2px solid #A67951;
+    text-align: center;
     line-height: 2.5;
+    border-bottom: 2px solid #A67951;
     margin-bottom: 20px;
+}
+#interpreter .wrap .yth li:nth-child(1) p{
+    font-size:18px;
+    line-height: 2;
+    padding: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight:300;
     text-align: center;
 }
-#interpreter .wrap ul li:nth-child(4) p{
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: 15px;
-    text-align: left;
-    line-height: 1.4;
-    font-weight: 300;
-}
-
-#interpreter .wrap ul li:nth-child(1), #interpreter .wrap ul li:nth-child(3){
-    border:2px solid #A67951;
+#interpreter .wrap .yth li:nth-child(2){
+    width:calc(100% / 2 - 50px / 2);
+    background-image: url(/asset/img/interpreter/양태훈_팀장.jpeg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position-x: 0;
 }
