@@ -8,12 +8,6 @@ $(document).ready(function(){
 
     const swiper = new Swiper('.swiper', {
       
-      // over effect
-      effect: 'fade',
-      fadeEffect: {
-        crossFade: true
-      },
-      
       // set auto play
       autoplay: {
         delay: 2500,
