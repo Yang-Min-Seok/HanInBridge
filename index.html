@@ -4,206 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HanInBridge</title>
+    <title>HaninBridge</title>
     
-    <!-- adopt Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="./asset/img/fabicon.ico/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./asset/img/fabicon.ico/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./asset/img/fabicon.ico/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./asset/img/fabicon.ico/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./asset/img/fabicon.ico/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./asset/img/fabicon.ico/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./asset/img/fabicon.ico/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./asset/img/fabicon.ico/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./asset/img/fabicon.ico/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./asset/img/fabicon.ico/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./asset/img/fabicon.ico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./asset/img/fabicon.ico/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./asset/img/fabicon.ico/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- adopt index.css -->
+    <!-- adopt css -->
     <link rel="stylesheet" href="./asset/css/common.css">
-    <link rel="stylesheet" href="./asset/css/index/header.css">
-    <link rel="stylesheet" href="./asset/css/index/main.css">
-    <link rel="stylesheet" href="./asset/css/index/footer.css">
+    <link rel="stylesheet" href="./asset/css/index/title.css">
+    <link rel="stylesheet" href="./asset/css/index/menu.css">
+    <link rel="stylesheet" href="/Next_HaninBridge/asset/css/index/title_responsive.css">
+    <link rel="stylesheet" href="/Next_HaninBridge/asset/css/index/menu_responsive.css">
+    <link rel="stylesheet" href="/Next_HaninBridge/asset/css/common_responsive.css">
 
     <!-- adopt jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    
+
     <!-- adopt index.js -->
     <script src="./asset/js/index.js"></script>
+    <script src="/Next_HaninBridge/asset/js/index_responsive.js"></script>
     
     <!-- adopt font -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo&display=swap');
+        /* font-family: 'Nanum Myeongjo', serif; */
+        /* font-family: 'Nanum Gothic', sans-serif; */
     </style>
-    
-    <!-- adopt fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    
 
 </head>
-
 <body>
-    <!-- header -->
-    <header>
-        <!-- logo -->
-        <h1>
-            <a href="#" title="to main page">
-                <img src="./asset/img/logo.jpeg" alt="top logo">
-            </a>
-        </h1>
-        <!-- nav -->
-        <nav class="navi">
+
+    <!-- title -->
+    <section id="title">
+        <div class="wrap">
+            <hgroup>
+                <h3 class="h3">Hello,</h3>
+                <h1 class="h1">We're Hanin Bridge!</h1>
+            </hgroup>
+        </div>
+    </section>
+
+    <!-- menu -->
+    <section id="menu">
+        <div class="wrap">
             <ul>
-                <li><a href="#" title="about us" id="about_us_btn">About us</a></li>
-                <li><a href="#" title="services" id="services_btn">Services</a></li>
+                <li>
+                    <a href="/Next_HaninBridge/About_us.html" class="p">About us</a>
+                </li>
+                <li>
+                    <a href="/Next_HaninBridge/Interpretation.html" class="p">Interpretation</a>
+                </li>
+                <li>
+                    <a href="/Next_HaninBridge/Import_export.html" class="p">Import & Export</a>
+                </li>
             </ul>
-        </nav>
-    </header>
-    
+        </div>
+    </section>
 
-    <!-- main contents -->
-    <main>
-        <!-- moving banner -->
-        <section id="visual">
-            <ul class="slide">
-                <li><a href="#" title="페이지이동"><img src="./asset/img/banner1.jpg" alt="banner"></a></li>
-                <li><a href="#" title="페이지이동"><img src="./asset/img/banner2.JPG" alt="banner"></a></li>
-                <li><a href="#" title="페이지이동"><img src="./asset/img/banner3.jpeg" alt="banner"></a></li>
-                <li><a href="#" title="페이지이동"><img src="./asset/img/banner4.jpg" alt="banner"></a></li>
+    <!-- responsive menu -->
+    <section id="responsive_menu">
+        <div class="wrap">
+            <ul>
+                <li>
+                    <a href="/Next_HaninBridge/About_us.html">About us</a>
+                </li>
+                <li>
+                    <a href="/Next_HaninBridge/Interpretation.html">Interpretation</a>
+                </li>
+                <li>
+                    <a href="/Next_HaninBridge/Import_export.html">Import & Export</a>
+                </li>
             </ul>
-            
-            <i class="fa-solid fa-circle-arrow-left"></i>
-            <i class="fa-solid fa-circle-arrow-right"></i>
-            
-            <ul class="c_btn_bot">
-                <li class="on">&nbsp;</li>
-                <li>&nbsp;</li>
-                <li>&nbsp;</li>
-                <li>&nbsp;</li>
-            </ul>
-        </section>
-        <!-- about us -->
-        <section id ="about_us">
-            <div id="about_us_header">
-                <h2>About us</h2>
-            </div>
-            <div id="title">
-                <h2>HANINBRIDGE</h2>
-                <h2>한인브릿지</h2>
-            </div>
-            <div id="title_txt">
-                <p>
-                    한인브릿지는 한국 기업들이 인도네시아로 진출할 수 있도록 도움을 주고자하는 사업을 하고 있습니다.<br>
-                    각종 수출입 계약에 관한 서류 번역부터, 수준 높은 수출 상담회 통역, 더 나아가 현지에서 열리는 전시회 참가를 함으로써<br>
-                    인도네시아 진출을 어려워하는 한국 기업이 더욱 원활하게 인도네시아로 나아갈 수 있도록 다리 역할을합니다.<br>
-                    한인브릿지와 함께 인도네시아로 나아가 인도네시아와 한국이 보다 쉽게 연결될 수 있다는 것을 경험할 수 있습니다.
-                </p>
-            </div>
-            <div id="about_us_img">
-                <img src="./asset/img/ceo_img.jpg" alt="ceo_img">
-            </div>
-            <div id="about_us_txt">
-                <h1>Director</h1>
-                <br>
-                <h3>Jin Woo Park</h3>
-                <br>
-                <p>
-                    인도네시아에서 태어나 20년을 살면서 꿈과 비젼을 키워왔습니다.<br><br>
-                    이를 이루기 위하여 한국에 와서도 말레이-인도네시아어과를 전공하면서 인도네시아의 언어, 문화, 역사 등 수많은 지식을 쌓아왔습니다. 대학교 시절 국영방송국 3사에서 자막 번역을 해왔으며, 이외에도 인도네시아어 라디오 방송 고정 출연, 각종 통.번역, 심지어 인도네시아 조코위도도 대통령 방한 당시 통역을 맡으면서 인도네시아어에 대한 자부심을 항상 지켜왔습니다.<br><br>
-                    졸업 이후 한국의 중소기업이 인도네시아에 진출할 수 있도록 도움을 주고자 인도네시아로 나갔습니다.
-                    이를 통해 해당 업체의 수출 계약도 이루어냈으며, 이제는 인도네시아에 대한 꿈과 비젼을 향한 도전이 시작되었습니다.
-                </p>
-            </div>
-        </section>
-        <!-- services -->
-        <section id="services">
-            <div id="services_header">
-                <h2>Services</h2>
-            </div>
-            <div id="services1">
-                <div id="services_txt1">
-                    <h1>Import & Export Consulting</h1>
-                    <br>
-                    <p>
-                        인도네시아의 전반적인 사업 지식과 네트워크를 이용하여 알맞은 방향으로 바이어들과
-                        연결하여 보다 빠르게 인도네시아로 진출하는 것을 경험할 수 있습니다.<br>
-                        직접 전시회 참가 또는 미팅을 참여하여 진출 전략을 만들어 체계적이고 빠르게 인도네시아로 제품이 진출할 수 있도록 길을 마련합니다.<br>
-                        한인브릿지와 함께 인도네시아로 연결되는 것을 경험할 수 있습니다.
-                    </p>
-                    <a id = "services_txt1_translate" href="#">see translation in Indonesian</a>
-                    <p id="services_txt1_idn">
-                        Dengan pengetahuan tinggi dan network yang ketat di Indoneia, kami membantu agar Anda dapat merasakan memasuki Indonesia bisa lebih cepat dengan hubungan dan arah yang tepat.<br>
-                        Dengan berpartisipasi langsung dalam pameran atau rapat, kami membuat strategi dan membuka jalan bagi produk untuk masuk ke Indonesia secara sistematis dan cepat.<br>
-                        Bersama HANIN BRIDGE, Anda dapat merasa terhubung dengan Indonesia.<br>
-                        <a id = "services_txt1_translate_hide" href="#">hide</a>
-                    </p>
-                </div>
-                <div id="services_img1">
-                    <img src="./asset/img/import_export_img.jpg" alt="imprt_export_img">
-                    <a href="./import_export.html">Further Information</a>
-                </div>
-            </div>
-
-            <div id="services2">
-                <div id="services_img2">
-                    <img src="./asset/img/translate_img.jpeg" alt="translate_img">
-                    <a href="./interpretation.html">Further Information</a>
-                </div>
-                <div id="services_txt2">
-                    <h1>Interpretation Consulting</h1>
-                    <br>
-                    <p>
-                        정확하고 신속한 통역 또는 번역이 인도네시아와 연결될 수 있는 생명줄입니다.<br>
-                        각종 분야의 통번역 경험과 네트워크를 바탕으로 소소한 통번역부터 규모가 큰 통번역까지 최고 퀄리티의 결과로 인도네시아와의 연결을 더욱 단단하게 만듭니다.<br>
-                        수준 높은 통번역 결과물로 인도네시아와의 언어적인 장벽을 넘어갈 수 있음을 경험해보세요.
-                    </p>
-                    <a id = "services_txt2_translate" href="#">see translation in Indonesian</a>
-                    <p id="services_txt2_idn">
-                        Interpretasi atau terjemahan yang akurat dan cepat adalah hal terpenting dalam komunikasi antara Indonesia.<br>
-                        Berdasarkan pengalaman dan jaringan interpretasi dan terjemahan kami di berbagai bidang, kami membuat koneksi dengan Indonesia lebih kuat dengan hasil yang berkualitas tertinggi dari interpretasi kecil hingga interpretasi skala besar.<br>
-                        Rasakan kemampuan untuk mengatasi kesulitan bahasa antara Indonesia dengan hasil terjemahan berkualitas tinggi.<br>
-                        <a id = "services_txt2_translate_hide" href="#">hide</a>
-                    </p>
-                </div>
-            </div>
-
-        </section>
-        
-        <!-- top button -->
-        <a href="#" id="top_btn">top</a>
-    </main>
-    
-    <!-- footer -->
-    <footer>
-
-        <div class="logo">
-            <img src="./asset/img/footer_logo.png" alt="footer_logo">
         </div>
-
-        <div class="info">
-
-            <div class="adr">
-                <p>서울특별시 서대문구 경기대로 58, 606호</p>
-                <p>58, Kyonggidae-ro, Seodaemun-gu, Seoul, Republic of Korea 606</p>
-            </div>
-            
-            <div class="contact">
-                <p>Tel : +82) 10-8533-9724</p>
-                <p>사업자등록번호 : 693-08-01850</p>
-            </div>
-        </div>
-        
-        <div class="copyright">
-        <p>&copy;2022 kurooru allrights reserved.</p>
-        </div>
-    
-    </footer>
+    </section>
 </body>
 </html>

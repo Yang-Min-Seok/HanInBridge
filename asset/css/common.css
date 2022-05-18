@@ -1,8 +1,17 @@
+/* for all */
 *{
-    margin:0 auto;
+    margin:0;
     padding:0;
     line-height: 1;
+    font-family: 'Nanum Gothic', serif;
+    list-style: none;
 }
+/* wrap */
+.wrap{
+    max-width:1280px; /* for responsive UI */
+    margin: 0 auto; /* center align */
+}
+/* font */
 .h1{
     font-size:38px;
     font-weight:bold;
@@ -29,4 +38,63 @@
 }
 .p{
     font-size:15px;
+}
+/* header */
+header{
+    max-width: 1280px;
+    padding-top: 3%;
+    margin:0 auto;
+}
+header a{
+    display:block;
+    width:30%;
+    height:200px;
+    background-image: url(/Next_HaninBridge/asset/img/logo.jpeg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+/* footer */
+footer{
+    
+}
+footer .wrap{
+    padding-top: 20px;
+    background-color: #5a5a5a;
+}
+footer .wrap div{
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer .wrap > ul{
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: space-around;
+}
+footer .wrap ul li{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size:20px;
+    color:#fff;
+    line-height: 2;
+}
+footer .wrap p{
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size:18px;
+    color:#fff;
+}
+/* top btn */
+#top_btn{
+    width:40px;
+    height:40px;
+    color:#fff;
+    text-decoration: none;
+    background-color: #5a5a5a;
+    position:fixed;
+    right: 3%;
+    bottom: 3%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
