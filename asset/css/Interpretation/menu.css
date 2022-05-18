@@ -23,8 +23,24 @@
 }
 #menu .wrap .general ul li:nth-child(1){
     width: 500px;
-    border: 3px solid #a67951;
-    box-sizing: border-box;
+}
+#menu .wrap .general ul li:nth-child(1) .swiper .swiper-wrapper .img1{
+    background-image: url(/asset/img/General_Interpretation/general_interpretation_1.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x: -60px;
+}
+#menu .wrap .general ul li:nth-child(1) .swiper .swiper-wrapper .img2{
+    background-image: url(/asset/img/General_Interpretation/general_interpretation_2.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x: -30px;
+}
+#menu .wrap .general ul li:nth-child(1) .swiper .swiper-wrapper .img3{
+    background-image: url(/asset/img/General_Interpretation/general_interpretation_3.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x: -50px;
 }
 #menu .wrap .general ul li:nth-child(1) .swiper .swiper-button-prev{
     left:5%;
@@ -54,6 +70,7 @@
     font-family: 'Nanum Myeongjo', serif;
     font-size: 23px;
     line-height: 2.5;
+    font-weight:bold;
 }
 #menu .wrap .document{
 
@@ -85,11 +102,22 @@
     font-family: 'Nanum Myeongjo', serif;
     font-size: 23px;
     line-height: 2.5;
+    font-weight:bold;
 }
 #menu .wrap .document ul li:nth-child(2){
     width: 500px;
-    border: 3px solid #a67951;
-    box-sizing: border-box;
+}
+#menu .wrap .document ul li:nth-child(2) .swiper .swiper-wrapper .img1{
+    background-image: url(/asset/img/Document_Interpretation/document_interpretation_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#menu .wrap .document ul li:nth-child(2) .swiper .swiper-wrapper .img2{
+    background-image: url(/asset/img/Document_Interpretation/document_interpretation_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 #menu .wrap .document ul li:nth-child(2) .swiper .swiper-button-prev{
     left:5%;
@@ -123,9 +151,14 @@
     height:500px;
 }
 #menu .wrap .phone ul li:nth-child(1){
-    width: 500px;
-    border: 3px solid #a67951;
-    box-sizing: border-box;
+    width: 700px;
+}
+#menu .wrap .phone ul li:nth-child(1) .swiper .swiper-wrapper .img1{
+    background-image: url(/asset/img/Phone_Interpretation/phone_interpretation.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: -50px;
+    
 }
 #menu .wrap .phone ul li:nth-child(1) .swiper .swiper-button-prev{
     left:5%;
@@ -143,7 +176,7 @@
     background-color:#a67951;
 }
 #menu .wrap .phone ul li:nth-child(2){
-    width: calc(100% - 532px);
+    width: calc(100% - 720px);
     border: 3px solid #a67951;
     box-sizing: border-box;
     display: flex;
@@ -155,4 +188,5 @@
     font-family: 'Nanum Myeongjo', serif;
     font-size: 23px;
     line-height: 2.5;
+    font-weight:bold;
 }
