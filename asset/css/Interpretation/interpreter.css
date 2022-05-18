@@ -32,7 +32,7 @@
 }
 #interpreter .wrap .pjw li:nth-child(1){
     width:calc(100% / 2 - 50px / 2);
-    background-image: url(/asset/img/interpreter/박진우_대표.jpeg);
+    background-image: url(/asset/img/interpreter/pjw.jpeg);
     background-repeat:no-repeat;
     background-size:cover;
     background-position-x: -100px;
@@ -95,7 +95,7 @@
 }
 #interpreter .wrap .yth li:nth-child(2){
     width:calc(100% / 2 - 50px / 2);
-    background-image: url(/asset/img/interpreter/양태훈_팀장.jpeg);
+    background-image: url(/asset/img/interpreter/yth.jpeg);
     background-repeat:no-repeat;
     background-size:cover;
     background-position-x: 0;
