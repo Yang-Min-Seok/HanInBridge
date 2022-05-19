@@ -3,7 +3,7 @@
 
     }
     #title .wrap{
-        height:100px !important;
+        height:70px !important;
         margin-bottom: 0 !important;
         margin-top: 10% !important;
     }
@@ -11,11 +11,11 @@
 
     }
     #title .wrap hgroup h3{
-        font-size:40px !important;
+        font-size:30px !important;
         transform:translateX(-20%) !important;
     }
     #title .wrap hgroup h1{
-        font-size:30px !important;
+        font-size:20px !important;
         transform:translateX(3%) !important;
     }
 }
