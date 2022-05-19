@@ -38,7 +38,7 @@
     background-image: url(/asset/img/index/interpretation.jpg);
 }
 #menu .wrap ul li:nth-child(3)::before{
-    background-image: url(/asset/img/index/import_export.jpg);
+    background-image: url(/asset/img/index/consulting.jpg);
 }
 #menu .wrap ul li a{
     font-family:'Nanum Gothic', sans-serif;
