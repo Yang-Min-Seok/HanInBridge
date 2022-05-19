@@ -48,7 +48,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         transform:translateX(50%);
     }
     #responsive_menu .wrap ul li:nth-child(2){
@@ -60,7 +60,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         transform:translateX(-50%);
     }
     #responsive_menu .wrap ul li:nth-child(3){
