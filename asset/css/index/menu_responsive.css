@@ -27,7 +27,7 @@
     }
     #responsive_menu .wrap{
         margin-top: 50px;
-        width:80%;
+        width:70%;
     }
     #responsive_menu .wrap ul{
         
@@ -78,7 +78,7 @@
         text-decoration: none;
         color: #fff;
         font-family: 'Nanum Myeongjo', serif;
-        font-size:30px;
+        font-size:25px;
         display:block;
         width:250px;
         line-height:2;
