@@ -12,10 +12,12 @@
     }
     #title .wrap hgroup h3{
         font-size:25px !important;
-        transform:translateX(-20%) !important;
+        transform:translateX(-15%) !important;
+        letter-spacing: 2px !important;
     }
     #title .wrap hgroup h1{
-        font-size:15px !important;
+        font-size:20px !important;
         transform:translateX(3%) !important;
+        letter-spacing: 2px !important;
     }
 }
