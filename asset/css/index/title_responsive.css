@@ -11,11 +11,11 @@
 
     }
     #title .wrap hgroup h3{
-        font-size:30px !important;
+        font-size:25px !important;
         transform:translateX(-20%) !important;
     }
     #title .wrap hgroup h1{
-        font-size:20px !important;
+        font-size:15px !important;
         transform:translateX(3%) !important;
     }
 }
