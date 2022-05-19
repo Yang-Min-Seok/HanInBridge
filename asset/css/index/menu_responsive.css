@@ -40,7 +40,7 @@
         box-sizing: border-box;
     }
     #responsive_menu .wrap ul li:nth-child(1){
-        background-image: url(/asset/img/aboutus.jpg);
+        background-image: url(/asset/img/index/aboutus.jpg);
         background-position:right;
         background-repeat: no-repeat;
         background-size: cover;
@@ -52,7 +52,7 @@
         transform:translateX(50%);
     }
     #responsive_menu .wrap ul li:nth-child(2){
-        background-image: url(/asset/img/interpretation.jpg);
+        background-image: url(/asset/img/index/interpretation.jpg);
         background-position:right;
         background-repeat: no-repeat;
         background-size: cover;
@@ -64,7 +64,7 @@
         transform:translateX(-50%);
     }
     #responsive_menu .wrap ul li:nth-child(3){
-        background-image: url(/asset/img/import_export.jpg);
+        background-image: url(/asset/img/index/import_export.jpg);
         background-position:right;
         background-repeat: no-repeat;
         background-size: cover;

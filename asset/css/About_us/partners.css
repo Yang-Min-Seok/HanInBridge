@@ -19,31 +19,31 @@
 
 }
 #partners .wrap .swiper .swiper-wrapper .img1{
-    background-image: url(/asset/img/partners/kcc_factory.jpeg);
+    background-image: url(/asset/img/About_us/partners/kcc_factory.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
 }
 #partners .wrap .swiper .swiper-wrapper .img2{
-    background-image: url(/asset/img/partners/kcc_company.jpeg);
+    background-image: url(/asset/img/About_us/partners/kcc_company.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
 }
 #partners .wrap .swiper .swiper-wrapper .img3{
-    background-image: url(/asset/img/partners/kcc_logo.png);
+    background-image: url(/asset/img/About_us/partners/kcc_logo.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 #partners .wrap .swiper .swiper-wrapper .img4{
-    background-image: url(/asset/img/partners/adapt.png);
+    background-image: url(/asset/img/About_us/partners/adapt.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 #partners .wrap .swiper .swiper-wrapper .img5{
-    background-image: url(/asset/img/partners/innoderm.png);
+    background-image: url(/asset/img/About_us/partners/innoderm.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

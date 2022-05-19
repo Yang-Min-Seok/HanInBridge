@@ -28,7 +28,7 @@
     width:calc(100% - 80px / 2);
 }
 #director .wrap ul li:nth-child(1){
-    background-image: url(/asset/img/Director/director.jpeg);
+    background-image: url(/asset/img/About_us/Director/director.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

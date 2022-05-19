@@ -49,7 +49,7 @@ header a{
     display:block;
     width:30%;
     height:200px;
-    background-image: url(/asset/img/logo.jpeg);
+    background-image: url(/asset/img/common/logo.jpeg);
     background-size:contain;
     background-repeat: no-repeat;
     margin: 0 auto;

@@ -25,19 +25,19 @@
     width: 500px;
 }
 #menu .wrap .general ul li:nth-child(1) .swiper .swiper-wrapper .img1{
-    background-image: url(/asset/img/General_Interpretation/general_interpretation_1.png);
+    background-image: url(/asset/img/interpretation/General_Interpretation/general_interpretation_1.png);
     background-repeat: no-repeat;
     background-size:cover;
     background-position-x: -60px;
 }
 #menu .wrap .general ul li:nth-child(1) .swiper .swiper-wrapper .img2{
-    background-image: url(/asset/img/General_Interpretation/general_interpretation_2.jpeg);
+    background-image: url(/asset/img/interpretation/General_Interpretation/general_interpretation_2.jpeg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position-x: -30px;
 }
 #menu .wrap .general ul li:nth-child(1) .swiper .swiper-wrapper .img3{
-    background-image: url(/asset/img/General_Interpretation/general_interpretation_3.jpeg);
+    background-image: url(/asset/img/interpretation/General_Interpretation/general_interpretation_3.jpeg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position-x: -50px;
@@ -108,13 +108,13 @@
     width: 500px;
 }
 #menu .wrap .document ul li:nth-child(2) .swiper .swiper-wrapper .img1{
-    background-image: url(/asset/img/Document_Interpretation/document_interpretation_1.jpg);
+    background-image: url(/asset/img/interpretation/Document_Interpretation/document_interpretation_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 #menu .wrap .document ul li:nth-child(2) .swiper .swiper-wrapper .img2{
-    background-image: url(/asset/img/Document_Interpretation/document_interpretation_2.jpg);
+    background-image: url(/asset/img/interpretation/Document_Interpretation/document_interpretation_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -154,7 +154,7 @@
     width: 700px;
 }
 #menu .wrap .phone ul li:nth-child(1) .swiper .swiper-wrapper .img1{
-    background-image: url(/asset/img/Phone_Interpretation/phone_interpretation.png);
+    background-image: url(/asset/img/interpretation/Phone_Interpretation/phone_interpretation.png);
     background-size:cover;
     background-repeat: no-repeat;
     background-position-x: -50px;

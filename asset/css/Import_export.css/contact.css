@@ -24,7 +24,7 @@
     width: calc(100% - 20px / 2);
 }
 #contact .wrap ul li:nth-child(1){
-    background-image: url(/asset/img/contact.jpg);
+    background-image: url(/asset/img/Import_Export/contact.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
