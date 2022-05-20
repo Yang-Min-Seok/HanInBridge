@@ -151,14 +151,12 @@
     height:500px;
 }
 #menu .wrap .phone ul li:nth-child(1){
-    width: 700px;
+    width: 650px;
 }
 #menu .wrap .phone ul li:nth-child(1) .swiper .swiper-wrapper .img1{
     background-image: url(/asset/img/interpretation/Phone_Interpretation/phone_interpretation.png);
     background-size:cover;
     background-repeat: no-repeat;
-    background-position-x: -50px;
-    
 }
 #menu .wrap .phone ul li:nth-child(1) .swiper .swiper-button-prev{
     left:5%;
@@ -176,7 +174,7 @@
     background-color:#a67951;
 }
 #menu .wrap .phone ul li:nth-child(2){
-    width: calc(100% - 720px);
+    width: calc(100% - 670px);
     border: 3px solid #a67951;
     box-sizing: border-box;
     display: flex;
