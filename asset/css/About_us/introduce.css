@@ -32,11 +32,14 @@
     margin:0 auto;
     width:90%;
     border: 3px solid #A67951;
-    text-align: center;
+    box-sizing: border-box;
     height:237px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
 }
 #introduce .wrap div p{
-    padding:3%;
     font-size: 21px;
     line-height: 2;
     font-weight: bold;
