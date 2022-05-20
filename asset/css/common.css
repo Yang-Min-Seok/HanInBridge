@@ -48,7 +48,7 @@ header{
 header a{
     display:block;
     width:30%;
-    height:150px;
+    height:200px;
     background-image: url(/asset/img/common/logo.jpeg);
     background-size:contain;
     background-repeat: no-repeat;
