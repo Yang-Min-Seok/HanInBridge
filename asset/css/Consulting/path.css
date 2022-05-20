@@ -1,0 +1,72 @@
+#path{
+    
+}
+#path .wrap{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#path .wrap h3{
+    font-family: 'Nanum Myeongjo', serif;
+    letter-spacing: 2px;
+    font-size:60px;
+    width:85%;
+    margin:0 auto;
+    margin-bottom: 50px;
+}
+#path .wrap ul{
+    width:90%;
+    margin:0 auto;
+    height:1200px;
+}
+#path .wrap ul li{
+    height:calc(100% / 2 - 50px / 2);
+}
+#path .wrap ul li:nth-child(1){
+    border: 3px solid #A67951;
+    box-sizing: border-box;
+}
+#path .wrap ul li:nth-child(1) .swiper{
+    height:100%;
+    width:100%;
+}
+#path .wrap ul li:nth-child(1) .swiper .swiper-wrapper{
+
+}
+#path .wrap ul li:nth-child(1) .swiper .swiper-wrapper .img1{
+    background-image: url(/asset/img/Consulting/Consulting_1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#path .wrap ul li:nth-child(1) .swiper .swiper-wrapper .img2{
+    background-image: url(/asset/img/Consulting/Consulting_2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#path .wrap ul li:nth-child(1) .swiper .swiper-pagination-bullet-active{
+    background-color: #A67951;
+}
+#path .wrap ul li:nth-child(1) .swiper .swiper-button-prev{
+    color:#A67951;
+    left:3%;
+}
+#path .wrap ul li:nth-child(1) .swiper .swiper-button-next{
+    color:#A67951;
+    right:3%;
+}
+#path .wrap ul li:nth-child(2){
+    margin-top: 50px;
+    border: 3px solid #A67951;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#path .wrap ul li:nth-child(2) p{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size:28px;
+    text-align: center;
+    line-height: 2;
+    font-weight:bold;
+}
