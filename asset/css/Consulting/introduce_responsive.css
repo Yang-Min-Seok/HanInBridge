@@ -19,6 +19,7 @@
     #introduce .wrap div{
         height:250px;
         padding: 0 10px;
+        border: 1px solid #A67951;
     }
     #introduce .wrap div p{
         font-size:10px;

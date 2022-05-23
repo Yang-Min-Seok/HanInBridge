@@ -5,7 +5,7 @@
     }
     #path .wrap{
         margin-top: 40px;
-        margin-bottom: 40px;
+        padding-bottom: 40px;;
     }
     #path .wrap h3{
         font-size: 20px;
@@ -19,7 +19,7 @@
         
     }
     #path .wrap ul li:nth-child(1){
-        
+        border: 1px solid #A67951;
     }
     #path .wrap ul li:nth-child(1) .swiper{
         
@@ -37,14 +37,15 @@
         
     }
     #path .wrap ul li:nth-child(1) .swiper .swiper-button-prev{
-        
+        display:none;
     }
     #path .wrap ul li:nth-child(1) .swiper .swiper-button-next{
-        
+        display:none;
     }
     #path .wrap ul li:nth-child(2){
         margin-top: 30px;
         padding: 0 10px;
+        border: 1px solid #A67951;
     }
     #path .wrap ul li:nth-child(2) p{
         font-size:10px;
