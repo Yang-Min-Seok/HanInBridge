@@ -14,9 +14,11 @@
     }
     #introduce .wrap hgroup h3:nth-child(1){
         font-size:20px !important;
+        letter-spacing: 10px;
     }
     #introduce .wrap hgroup h3:nth-child(2){
         font-size:25px !important;
+        letter-spacing: 15px;
     }
     #introduce .wrap div{
         border:none;
