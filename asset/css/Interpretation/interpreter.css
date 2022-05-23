@@ -100,3 +100,6 @@
     background-size:cover;
     background-position-x: 0;
 }
+#interpreter .wrap .res_pjw, #interpreter .wrap .res_yth{
+    display:none;
+}
