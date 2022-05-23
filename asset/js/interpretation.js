@@ -11,7 +11,7 @@ $(document).ready(function(){
         $(window).scroll(function() {
             let a = $(this).scrollTop();
             // for test
-            console.log(a);
+            // console.log(a);
             if(a > 800){
                 $('#interpreter .wrap hgroup').animate({opacity:'1',transition:'0.7s'});
             }
