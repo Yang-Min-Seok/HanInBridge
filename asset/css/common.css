@@ -59,30 +59,46 @@ footer{
     
 }
 footer .wrap{
-    padding-top: 20px;
     background-color: #5a5a5a;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-footer .wrap div{
-    text-align: center;
-    margin-bottom: 20px;
+footer .wrap .footer_img{
+    width:80%;
+    height:48px;
+    background-image: url(/asset/img/common/footer_logo.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin: 0 auto;
 }
-footer .wrap > ul{
-    margin-bottom: 20px;
+footer .wrap .footer_info{
+    padding-top: 10px;
     display:flex;
-    justify-content: space-around;
+    width:80%;
+    margin:0 auto;
+    justify-content: space-between;
 }
-footer .wrap ul li{
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size:20px;
-    color:#fff;
+footer .wrap .footer_info ul:nth-child(1){
+
+}
+footer .wrap .footer_info ul:nth-child(1) li{
+    color: #fff;
+    font-size:17px;
+    line-height: 2;
+}
+footer .wrap .footer_info ul:nth-child(2){
+    
+}
+footer .wrap .footer_info ul:nth-child(2) li{
+    color: #fff;
+    font-size:17px;
     line-height: 2;
 }
 footer .wrap p{
-    text-align: center;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size:18px;
-    color:#fff;
-    padding-bottom: 15px;
+    width:80%;
+    color: #fff;
+    margin:0 auto;
+    line-height: 2;
 }
 /* top btn */
 #top_btn{
