@@ -37,6 +37,8 @@
     }
     #director .wrap ul li:nth-child(2) p{
         font-size:10px;
+        text-align: left;
+        padding: 0 25px;
     }
 
 }
