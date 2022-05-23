@@ -14,7 +14,7 @@
     /* responsive .general */
 
     #menu .wrap .res_general{
-        
+        display:block;
     }
     #menu .wrap .res_general h3{
         font-family: 'Nanum Myeongjo', serif;
@@ -92,7 +92,7 @@
     /* responsive document */
 
     #menu .wrap .res_document{
-        
+        display:block;
     }
     #menu .wrap .res_document h3{
         font-family: 'Nanum Myeongjo', serif;
@@ -165,7 +165,7 @@
     /* responsive phone */
     
     #menu .wrap .res_phone{
-        
+        display:block;
     }
     #menu .wrap .res_phone h3{
         font-family: 'Nanum Myeongjo', serif;
