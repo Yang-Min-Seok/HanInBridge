@@ -62,3 +62,7 @@
     right:3%;
     color: #A67951;
 }
+/* responsive */
+#partners .wrap ul{
+    display:none;
+}

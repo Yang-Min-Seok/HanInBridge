@@ -1,0 +1,36 @@
+@media screen and (max-width:768px){ /* for typical smartphone */
+
+    /* do not show swiper */
+    #partners .wrap .swiper{
+        display:none;
+    }
+    
+    #partners{
+    
+    }
+    #partners .wrap{
+        border-top: 3px solid #A67951;
+    }
+    #partners .wrap h3{
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 25px;
+        text-align: center;
+        line-height: 3;
+    }
+    #partners .wrap ul{
+        
+    }
+    #partners .wrap ul li{
+
+    }
+    #partners .wrap ul li:nth-child(1){
+
+    }
+    #partners .wrap ul li:nth-child(2){
+
+    }
+    #partners .wrap ul li:nth-child(3){
+
+    }
+
+}
