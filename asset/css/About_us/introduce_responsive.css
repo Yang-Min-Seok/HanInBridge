@@ -9,8 +9,11 @@
     }
     #introduce .wrap hgroup{
         height:80px;
-        margin-top: 40px;
-        margin-bottom: 0;
+        margin-top: 40px !important;
+        width:90%;
+        margin:0 auto;
+        text-align: center;
+        margin-bottom: 20px;
     }
     #introduce .wrap hgroup h3:nth-child(1){
         font-size:20px !important;
@@ -18,10 +21,12 @@
     }
     #introduce .wrap hgroup h3:nth-child(2){
         font-size:25px !important;
-        letter-spacing: 15px;
+        letter-spacing: 10px;
     }
     #introduce .wrap div{
-        border:none;
+        border: 1px solid #A67951;
+        margin-bottom: 20px;
+        padding:10px;
     }
     #introduce .wrap div p{
         letter-spacing:1px;
