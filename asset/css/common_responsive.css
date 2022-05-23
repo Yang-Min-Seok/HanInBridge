@@ -10,19 +10,28 @@
 
     /* footer */
     footer{
-        
+    
     }
     footer .wrap{
         
     }
-    footer .wrap div{
+    footer .wrap .footer_img{
+        height:25px;
+    }
+    footer .wrap .footer_info{
+        display:block;
+    }
+    footer .wrap .footer_info ul:nth-child(1){
+    
+    }
+    footer .wrap .footer_info ul:nth-child(1) li{
+        font-size: 10px;
+    }
+    footer .wrap .footer_info ul:nth-child(2){
         
     }
-    footer .wrap > ul{
-
-    }
-    footer .wrap ul li{   
-        font-size:10px;
+    footer .wrap .footer_info ul:nth-child(2) li{
+        font-size: 10px;
     }
     footer .wrap p{
         font-size:10px;
