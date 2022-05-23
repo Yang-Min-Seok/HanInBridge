@@ -10,7 +10,7 @@
 
     /* footer */
     footer{
-
+        
     }
     footer .wrap{
         
@@ -21,12 +21,14 @@
     footer .wrap > ul{
 
     }
-    footer .wrap ul li{
-        font-size:5px !important;
+    footer .wrap ul li{   
+        font-size:10px;
     }
     footer .wrap p{
-        font-size:8px !important;
+        font-size:10px;
     }
+
+    /* hide top btn */
     #top_btn{
         display:none !important;
     }
