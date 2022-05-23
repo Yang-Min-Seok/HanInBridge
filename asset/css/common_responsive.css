@@ -5,7 +5,7 @@
 
     }
     header a{
-        height:150px !important;
+        height:100px !important;
     }
 
     /* footer */
@@ -22,10 +22,10 @@
 
     }
     footer .wrap ul li{
-        font-size:15px !important;
+        font-size:5px !important;
     }
     footer .wrap p{
-        font-size:13px !important;
+        font-size:8px !important;
     }
     #top_btn{
         display:none !important;
