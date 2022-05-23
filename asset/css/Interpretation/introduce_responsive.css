@@ -1,0 +1,27 @@
+@media screen and (max-width:768px){ /* for typical smartphone */
+
+    #introduce{
+    
+    }
+    #introduce .wrap{
+        margin-top: 0;
+        padding-bottom: 30px;
+    }
+    #introduce .wrap hgroup{
+        margin-top: 30px;
+    }
+    #introduce .wrap hgroup h3{
+        font-size: 20px;
+    }
+    #introduce .wrap hgroup h2{
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+    #introduce .wrap div{
+        padding: 0 10px;
+    }
+    #introduce .wrap div p{
+        font-size:12px;
+    }
+
+}
