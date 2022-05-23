@@ -18,19 +18,34 @@
         line-height: 3;
     }
     #partners .wrap ul{
-        
+        margin:0 auto;
+        display:flex !important;
+        width:90%;
+        height:100px;
+        column-gap: 10px;
     }
     #partners .wrap ul li{
-
+        width: calc(100% / 3 - 20px / 3);
+        border: 1px solid #A67951;
+        box-sizing: border-box;
     }
     #partners .wrap ul li:nth-child(1){
-
+        background-image: url(/asset/img/About_us/partners/adapt.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     #partners .wrap ul li:nth-child(2){
-
+        background-image: url(/asset/img/About_us/partners/kcc_logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     #partners .wrap ul li:nth-child(3){
-
+        background-image: url(/asset/img/About_us/partners/innoderm.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
 }
