@@ -188,3 +188,7 @@
     line-height: 2.5;
     font-weight:bold;
 }
+/* hide .res_general .res_document .res_phone */
+#menu .wrap .res_general, #menu .wrap .res_document, #menu .wrap .res_phone{
+    display:none;
+}
