@@ -1,19 +1,53 @@
 @media screen and (max-width:768px){ /* for typical smartphone */
 
-    #contact{
+    #path{
+    
+    }
+    #path .wrap{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    #path .wrap h3{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    #path .wrap ul{
+        height:500px;
+    }
+    #path .wrap ul li{
         
     }
-    #contact .wrap{
-
+    #path .wrap ul li:nth-child(1){
+        
     }
-    #contact .wrap h3{
-        font-size:45px;
+    #path .wrap ul li:nth-child(1) .swiper{
+        
     }
-    #contact .wrap ul{
-
+    #path .wrap ul li:nth-child(1) .swiper .swiper-wrapper{
+    
     }
-    #contact .wrap ul li{
-
+    #path .wrap ul li:nth-child(1) .swiper .swiper-wrapper .img1{
+        
+    }
+    #path .wrap ul li:nth-child(1) .swiper .swiper-wrapper .img2{
+        
+    }
+    #path .wrap ul li:nth-child(1) .swiper .swiper-pagination-bullet-active{
+        
+    }
+    #path .wrap ul li:nth-child(1) .swiper .swiper-button-prev{
+        
+    }
+    #path .wrap ul li:nth-child(1) .swiper .swiper-button-next{
+        
+    }
+    #path .wrap ul li:nth-child(2){
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+    #path .wrap ul li:nth-child(2) p{
+        font-size:10px;
     }
 
 }
