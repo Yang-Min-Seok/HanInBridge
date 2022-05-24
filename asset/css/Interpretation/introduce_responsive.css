@@ -18,6 +18,7 @@
         letter-spacing: 5px;
     }
     #introduce .wrap div{
+        height:200px;
         padding: 0 10px;
         border: 1px solid #A67951;
     }
