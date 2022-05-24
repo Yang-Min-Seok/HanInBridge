@@ -12,7 +12,7 @@ $(document).ready(function(){
             let a = $(this).scrollTop();
             // for test
             // console.log(a);
-            if(a > 800){
+            if(a > 300){
                 $('#interpreter .wrap hgroup').animate({opacity:'1',transition:'0.7s'});
             }
         });
