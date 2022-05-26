@@ -31,9 +31,11 @@
         display:block;
     }
     #director .wrap ul li:nth-child(2) h3{
+        width:60%;
+        margin:0 auto;
         font-size:20px;
-        border-bottom: none;
-        margin-bottom: 0;
+        border-bottom: 1px solid #A67951;
+        margin-bottom: 20px;
     }
     #director .wrap ul li:nth-child(2) p{
         font-size:10px;
