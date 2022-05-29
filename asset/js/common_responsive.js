@@ -14,6 +14,7 @@ $(document).ready(function(){
         $('#menu_anchor').click(function(){
             $(this).hide(1000);
             $('#menu_btn').slideDown(1000);
+            return false;
         })
 
         // when user clicks #menu_btn li:nth-child(1) -> hide #menu_btn and slideDown #menu_anchor
