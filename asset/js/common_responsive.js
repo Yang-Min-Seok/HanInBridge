@@ -14,7 +14,13 @@ $(document).ready(function(){
         $('#menu_anchor').click(function(){
             $(this).hide(1000);
             $('#menu_btn').slideDown(1000);
-        }) 
+        })
+
+        // when user clicks #menu_btn li:nth-child(1) -> hide #menu_btn and slideDown #menu_anchor
+        $('#menu_btn li:nth-child(1)').click(function(){
+            $('#menu_btn').hide(1000);
+            $('#menu_anchor').show(1000);
+        })
     }
 
 })

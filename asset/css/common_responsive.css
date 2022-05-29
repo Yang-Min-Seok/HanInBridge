@@ -68,7 +68,6 @@
         top:2.5%;
         right:5%;
         width:100px;
-        height:90px;
         text-align: center;
         border: 1px solid #A67951;
         box-sizing: border-box;
@@ -100,6 +99,16 @@
 
     }
     #menu_btn li:nth-child(3) a{
+        font-family: 'Nanum Myeongjo', serif;
+        font-size:15px;
+        line-height: 2;
+        text-decoration :none;
+        color:#000;
+    }
+    #menu_btn li:nth-child(4){
+
+    }
+    #menu_btn li:nth-child(4) a{
         font-family: 'Nanum Myeongjo', serif;
         font-size:15px;
         line-height: 2;
