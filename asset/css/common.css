@@ -115,3 +115,13 @@ footer .wrap p{
     justify-content: center;
     align-items: center;
 }
+
+/* menu btn */
+#menu_btn{
+    display:none;
+}
+
+/* menu anchor */
+#menu_anchor{
+    display:none;
+}
