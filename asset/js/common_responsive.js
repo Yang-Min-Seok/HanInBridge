@@ -20,6 +20,7 @@ $(document).ready(function(){
         $('#menu_btn li:nth-child(1)').click(function(){
             $('#menu_btn').hide(1000);
             $('#menu_anchor').show(1000);
+            return false;
         })
     }
 
