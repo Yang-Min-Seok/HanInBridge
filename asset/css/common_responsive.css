@@ -83,36 +83,36 @@
         font-size:15px;
         line-height: 2;
         text-decoration :none;
-        color:#000;
+        color:#A67951;
     }
     #menu_btn li:nth-child(2){
-
+        background-color: #A67951;
     }
     #menu_btn li:nth-child(2) a{
         font-family: 'Nanum Myeongjo', serif;
         font-size:15px;
         line-height: 2;
         text-decoration :none;
-        color:#000;
+        color:#fff;
     }
     #menu_btn li:nth-child(3){
-
+        background-color: #A67951;
     }
     #menu_btn li:nth-child(3) a{
         font-family: 'Nanum Myeongjo', serif;
         font-size:15px;
         line-height: 2;
         text-decoration :none;
-        color:#000;
+        color:#fff;
     }
     #menu_btn li:nth-child(4){
-
+        background-color: #A67951;
     }
     #menu_btn li:nth-child(4) a{
         font-family: 'Nanum Myeongjo', serif;
         font-size:15px;
         line-height: 2;
         text-decoration :none;
-        color:#000;
+        color:#fff;
     }
 }
