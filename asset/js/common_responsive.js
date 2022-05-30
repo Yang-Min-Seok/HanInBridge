@@ -10,17 +10,17 @@ $(document).ready(function(){
             $('#menu_btn').hide();
         })
 
-        // when user clicks #menu_anchor -> slideUp #menu_anchor and slideDown #menu_btn
+        // when user clicks #menu_anchor -> hide #menu_anchor and slideDown #menu_btn
         $('#menu_anchor').click(function(){
-            $(this).slideUp(700);
+            $(this).hide();
             $('#menu_btn').slideDown(700);
             return false;
         })
 
-        // when user clicks #menu_btn li:nth-child(1) -> slideUp #menu_btn and slideDown #menu_anchor
+        // when user clicks #menu_btn li:nth-child(1) -> hide #menu_btn and fadeIn #menu_anchor
         $('#menu_btn li:nth-child(1)').click(function(){
-            $('#menu_btn').slideUp(700);
-            $('#menu_anchor').slideDown(700);
+            $('#menu_btn').hide();
+            $('#menu_anchor').fadeIn(700);
             return false;
         })
     }
