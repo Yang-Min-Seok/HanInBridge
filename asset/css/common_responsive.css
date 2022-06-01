@@ -116,4 +116,12 @@
         text-decoration :none;
         color:#fff;
     }
+    /* hide navi anchor */
+    #navi_anchor{
+        display:none;
+    }
+    /* hide navi */
+    #navi{
+        display:none;
+    }
 }

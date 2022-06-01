@@ -128,8 +128,8 @@ footer .wrap p{
     color:#000;
     font-size:25px;
     width:150px;
-    height:100px;
-    border:3px solid #A67951;
+    height:70px;
+    border:1px solid #A67951;
     box-sizing: border-box;
     transition: all 0.7s;
 }
@@ -145,26 +145,30 @@ footer .wrap p{
     right:3%;
     width:150px;
     text-align: center;
-    border: 1px solid #A67951;
     box-sizing: border-box;
     z-index: 1;
 }
 #navi li{
-    height:100px;
+    height:200px;
     display:flex;
     flex-direction: column;
     justify-content: center;
 }
 #navi li:nth-child(1){
+    height:70px;
     border-bottom: 1px solid #A67951;
     box-sizing: border-box;
+    transition: all 0.7s;
+}
+#navi li:nth-child(1):hover{
+   opacity: 0.5;
 }
 #navi li:nth-child(1) a{
     font-family: 'Nanum Myeongjo', serif;
-    font-size:15px;
+    font-size:30px;
     line-height: 2;
     text-decoration :none;
-    color:#fff;
+    color:#A67951;
 }
 #navi li:nth-child(2){
     border-bottom: 1px solid #A67951;
@@ -178,8 +182,8 @@ footer .wrap p{
 }
 #navi li:nth-child(2) a{
     font-family: 'Nanum Myeongjo', serif;
-    font-size:15px;
-    line-height: 2;
+    font-size:18px;
+    line-height: 3;
     text-decoration :none;
     color:#fff;
     width:80%;
@@ -199,8 +203,8 @@ footer .wrap p{
 }
 #navi li:nth-child(3) a{
     font-family: 'Nanum Myeongjo', serif;
-    font-size:15px;
-    line-height: 2;
+    font-size:18px;
+    line-height: 3;
     text-decoration :none;
     color:#fff;
     width:80%;
@@ -218,14 +222,18 @@ footer .wrap p{
 }
 #navi li:nth-child(4) a{
     font-family: 'Nanum Myeongjo', serif;
-    font-size:15px;
-    line-height: 2;
+    font-size:18px;
+    line-height: 3;
     text-decoration :none;
     color:#fff;
     width:80%;
     background-color:rgba(166,121,81,0.5);
     margin:0 auto;
     border-radius: 7.5px;
+}
+/* hide navi */
+#navi{
+    display:none;
 }
 /* menu anchor */
 #menu_anchor{
