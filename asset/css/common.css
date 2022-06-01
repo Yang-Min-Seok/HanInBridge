@@ -127,7 +127,7 @@ footer .wrap p{
     text-decoration: none;
     color:#000;
     font-size:25px;
-    width:100px;
+    width:150px;
     height:100px;
     border:3px solid #A67951;
     box-sizing: border-box;
@@ -137,12 +137,100 @@ footer .wrap p{
     background-color: #A67951;
     color:#fff;
 }
-
+/* navi */
+#navi{
+    display:block;
+    position:fixed;
+    top:7%;
+    right:3%;
+    width:150px;
+    text-align: center;
+    border: 1px solid #A67951;
+    box-sizing: border-box;
+    z-index: 1;
+}
+#navi li{
+    height:100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#navi li:nth-child(1){
+    border-bottom: 1px solid #A67951;
+    box-sizing: border-box;
+}
+#navi li:nth-child(1) a{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size:15px;
+    line-height: 2;
+    text-decoration :none;
+    color:#fff;
+}
+#navi li:nth-child(2){
+    border-bottom: 1px solid #A67951;
+    box-sizing: border-box;
+    transition: all 0.7s;
+}
+#navi li:nth-child(2):hover{
+    background-image: url(/asset/img/index/aboutus.jpg);
+    background-size:cover;
+    background-position:center;
+}
+#navi li:nth-child(2) a{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size:15px;
+    line-height: 2;
+    text-decoration :none;
+    color:#fff;
+    width:80%;
+    background-color:rgba(166,121,81,0.5);
+    margin:0 auto;
+    border-radius: 7.5px;
+}
+#navi li:nth-child(3){
+    border-bottom: 1px solid #A67951;
+    box-sizing: border-box;
+    transition:all 0.7s;
+}
+#navi li:nth-child(3):hover{
+    background-image: url(/asset/img/index/interpretation.jpg);
+    background-size:cover;
+    background-position:center;
+}
+#navi li:nth-child(3) a{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size:15px;
+    line-height: 2;
+    text-decoration :none;
+    color:#fff;
+    width:80%;
+    background-color:rgba(166,121,81,0.5);
+    margin:0 auto;
+    border-radius: 7.5px;
+}
+#navi li:nth-child(4){
+    transition:all 0.7s;
+}
+#navi li:nth-child(4):hover{
+    background-image: url(/asset/img/index/consulting.jpg);
+    background-size:cover;
+    background-position:center;
+}
+#navi li:nth-child(4) a{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size:15px;
+    line-height: 2;
+    text-decoration :none;
+    color:#fff;
+    width:80%;
+    background-color:rgba(166,121,81,0.5);
+    margin:0 auto;
+    border-radius: 7.5px;
+}
 /* menu anchor */
 #menu_anchor{
     display:none;
 }
-
 /* menu btn */
 #menu_btn{
     display:none;
