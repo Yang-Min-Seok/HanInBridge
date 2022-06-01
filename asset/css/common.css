@@ -132,6 +132,7 @@ footer .wrap p{
     border:1px solid #A67951;
     box-sizing: border-box;
     transition: all 0.7s;
+    z-index: 1;
 }
 #navi_anchor:hover{
     background-color: #A67951;
