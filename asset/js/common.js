@@ -17,8 +17,8 @@ $(document).ready(function(){
         });
     });
 
-    // when user clicks #navi_anchor -> hide this and slideDown #navi
-    $('#navi_anchor').click(function(){
+    // when user hovers #navi_anchor -> hide this and slideDown #navi
+    $('#navi_anchor').hover(function(){
         $(this).hide();
         $('#navi').slideDown(1500);
         return false;
@@ -26,9 +26,9 @@ $(document).ready(function(){
 
     // when user clicks #navi li:nth-child(1) a -> hide #navi and show #navi_anchor
     $('#navi li:nth-child(1) a').click(function(){
-        $('#navi').hide();
-        $('#navi_anchor').show();
-        return false
+        $('#navi').hide(1000);
+        $('#navi_anchor').show(1000);
+        return false;
     })
 
 })
