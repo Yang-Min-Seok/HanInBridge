@@ -26,7 +26,7 @@
     margin:0 auto;
     justify-content: space-between;
     width:90%;
-    height:900px;
+    height:750px;
     column-gap: 50px;
     margin-bottom: 100px;
 }
@@ -35,7 +35,6 @@
     background-image: url(/asset/img/interpretation/interpreter/pjw.jpeg);
     background-repeat:no-repeat;
     background-size:cover;
-    background-position-x: -100px;
 }
 #interpreter .wrap .pjw li:nth-child(2){
     width:calc(100% / 2 - 50px / 2);
